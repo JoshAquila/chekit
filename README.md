@@ -20,7 +20,7 @@ Then verify:
 
 ```bash
 curl -s http://127.0.0.1:3333/health
-curl -s -X POST http://127.0.0.1:3333/check \
+curl -s -X POST http://127.0.0.1:3333/api/check \
   -H 'content-type: application/json' \
   -d '{"ingredientString":"Water, Cocos Nucifera, Isopropyl Myristate"}'
 ```
@@ -175,7 +175,9 @@ Returns service health.
 
 Returns SQLite ingredient rows and their synonyms.
 
-### `POST /check`
+### `POST /api/check`
+
+Checks an ingredient list. `/check` is also registered locally, but `/api/check` is the recommended hosted endpoint.
 
 Request:
 

@@ -31,7 +31,7 @@ export function buildServer() {
     };
   });
 
-  fastify.post('/check', async (request, reply) => {
+  async function checkIngredients(request, reply) {
     const body = request.body || {};
     const ingredients = parseIngredients(body.ingredients || body.ingredientString);
 
@@ -51,7 +51,10 @@ export function buildServer() {
       matchCount: matches.length,
       matches
     };
-  });
+  }
+
+  fastify.post('/check', checkIngredients);
+  fastify.post('/api/check', checkIngredients);
 
   return fastify;
 }

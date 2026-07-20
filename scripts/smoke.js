@@ -24,25 +24,27 @@ upsertIngredients([
 const server = buildServer();
 
 try {
-  const response = await server.inject({
-    method: 'POST',
-    url: '/check',
-    payload: {
-      ingredientString: 'Water, Cocos Nucifera, Glycerin'
+  for (const url of ['/check', '/api/check']) {
+    const response = await server.inject({
+      method: 'POST',
+      url,
+      payload: {
+        ingredientString: 'Water, Cocos Nucifera, Glycerin'
+      }
+    });
+
+    if (response.statusCode !== 200) {
+      throw new Error(response.body);
     }
-  });
 
-  if (response.statusCode !== 200) {
-    throw new Error(response.body);
-  }
-
-  const body = JSON.parse(response.body);
-  if (
-    body.matchCount !== 1
-    || body.matches[0].name !== 'coconut oil'
-    || body.matches[0].matchedInputs[0].matchedVia !== 'synonym'
-  ) {
-    throw new Error(JSON.stringify(body, null, 2));
+    const body = JSON.parse(response.body);
+    if (
+      body.matchCount !== 1
+      || body.matches[0].name !== 'coconut oil'
+      || body.matches[0].matchedInputs[0].matchedVia !== 'synonym'
+    ) {
+      throw new Error(JSON.stringify(body, null, 2));
+    }
   }
 
   console.log('Smoke test passed.');
