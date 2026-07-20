@@ -1,0 +1,2923 @@
+[
+  {
+    "id": 2,
+    "name": "1-acetoxyhexadecane",
+    "causes_acne": true,
+    "description": "This ingredient is an ester and can be comedogenic. It can clog pores and lead to breakouts, especially in individuals with oily or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "1acetoxyhexadecane"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "1-hexadecanol",
+    "causes_acne": true,
+    "description": "Commonly known as cetyl alcohol, it is mildly comedogenic. It can trap oils and dirt in the pores, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "1hexadecanol"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "1-hexadecanol acetate",
+    "causes_acne": true,
+    "description": "Also known as cetyl acetate, this ingredient can be comedogenic and may contribute to clogged pores and acne formation.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "1hexadecanol acetate"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Acetic acid hexadecyl ester",
+    "causes_acne": true,
+    "description": "Similar to other esters, this can be comedogenic. It can block pores and contribute to the development of acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 6,
+    "name": "Acetylated Lanolin",
+    "causes_acne": true,
+    "description": "This is a modified form of lanolin, which is highly comedogenic. It can form a barrier on the skin, trapping oil and bacteria in the pores.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 7,
+    "name": "Acetylated Lanolin Alcohol",
+    "causes_acne": true,
+    "description": "Similar to acetylated lanolin, this ingredient is comedogenic. It can clog pores and cause breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 8,
+    "name": "Acetylated wool fat",
+    "causes_acne": true,
+    "description": "Derived from lanolin, it is comedogenic and can contribute to acne by blocking pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 9,
+    "name": "Acetylated wool wax",
+    "causes_acne": true,
+    "description": "Another lanolin derivative, it is also comedogenic and can lead to clogged pores and acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 10,
+    "name": "Adansonia digitata l.",
+    "causes_acne": true,
+    "description": "Commonly known as Baobab. It is generally considered non-comedogenic, but in some individuals, it can still cause issues if combined with other comedogenic ingredients or if the skin is particularly sensitive.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 11,
+    "name": "Agar",
+    "causes_acne": true,
+    "description": "Typically non-comedogenic, but it can occasionally cause irritation or acne in very sensitive skin types when used in large amounts.",
+    "face_reality": false,
+    "comedogenic_score": 1,
+    "synonyms": []
+  },
+  {
+    "id": 12,
+    "name": "Ahnfeltiopsis concinna extract",
+    "causes_acne": true,
+    "description": "A form of Red Algae. Generally considered non-comedogenic, but can cause breakouts in some individuals due to individual sensitivities or allergic reactions.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 13,
+    "name": "Alaria esculenta extract",
+    "causes_acne": true,
+    "description": "Also known as Brown Algae (yuck). Typically non-comedogenic, but some people may experience breakouts due to sensitivities or the presence of other comedogenic substances in the formulation",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 14,
+    "name": "Alga bladderwrack",
+    "causes_acne": true,
+    "description": "Usually non-comedogenic, but can occasionally cause acne due to individual skin reactions or if mixed with other comedogenic ingredients.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 15,
+    "name": "Algae",
+    "causes_acne": true,
+    "description": "A broad category, but generally algae are non-comedogenic. However, certain types can cause irritation or allergic reactions leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 16,
+    "name": "Algae Extract",
+    "causes_acne": true,
+    "description": "Similar to algae, extracts are generally non-comedogenic. However, sensitivities or other ingredients in the formulation can cause breakouts in some individuals.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 17,
+    "name": "Algin",
+    "causes_acne": true,
+    "description": "Algin, derived from brown seaweed, is generally considered non-comedogenic. However, it can sometimes cause irritation in sensitive individuals, potentially leading to breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 18,
+    "name": "Alginate",
+    "causes_acne": true,
+    "description": "Similar to algin, alginate is usually non-comedogenic but can cause irritation or allergic reactions in some people, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 19,
+    "name": "Alginic acid",
+    "causes_acne": true,
+    "description": "This is a type of algae-derived polysaccharide, generally considered non-comedogenic but could cause breakouts in sensitive individuals.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 20,
+    "name": "Aphanothece sacrum polysaccharide",
+    "causes_acne": true,
+    "description": "This is a type of algae-derived polysaccharide, generally considered non-comedogenic but could cause breakouts in sensitive individuals.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 21,
+    "name": "Arthrospira plantensis",
+    "causes_acne": true,
+    "description": "Typically non-comedogenic and often used for its antioxidant properties. However, individual sensitivities can lead to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 22,
+    "name": "Ascophyllum nodosum extract",
+    "causes_acne": true,
+    "description": "This red algae extract is generally non-comedogenic, but like other algae extracts, it can cause irritation in sensitive individuals.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 23,
+    "name": "Asparagopsis armata extract",
+    "causes_acne": true,
+    "description": "Red algae; moderate risk.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 24,
+    "name": "Baobab",
+    "causes_acne": true,
+    "description": "Similar to Adansonia digitata, generally non-comedogenic, but can cause breakouts in some individuals with sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": [
+      "adansonia digitata baobab oil",
+      "baobab oil"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Beeswax",
+    "causes_acne": true,
+    "description": "Beeswax is highly comedogenic and can form a barrier on the skin that traps oil, dirt, and bacteria, leading to clogged pores and acne.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": [
+      "peg8 beeswax",
+      "polyglyceryl 3 beeswax",
+      "synthetic beeswax"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Bismuth",
+    "causes_acne": true,
+    "description": "Bismuth compounds, like bismuth oxychloride, can cause irritation and clogged pores in some individuals, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 1,
+    "synonyms": [
+      "bismuth ammonium citrate",
+      "bismuth chloride oxide",
+      "bismuth citrate",
+      "bismuth oxychloride",
+      "bismuth subcarbonate",
+      "bismuth subgallate",
+      "bismuth subnitrate",
+      "bismuth tannate"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Bryopsis africana",
+    "causes_acne": true,
+    "description": "This algae extract is generally non-comedogenic but can cause irritation or allergic reactions in some people, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 28,
+    "name": "Butyl Octadecanoate",
+    "causes_acne": true,
+    "description": "This ester is comedogenic and can clog pores, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 29,
+    "name": "Butyl Stearate",
+    "causes_acne": true,
+    "description": "Butyl stearate is highly comedogenic and can clog pores, causing breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 30,
+    "name": "Butyl Stearic acid",
+    "causes_acne": true,
+    "description": "Similar to butyl stearate, it is comedogenic and can clog pores, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 31,
+    "name": "Butyrospermum",
+    "causes_acne": true,
+    "description": "Another form of Shea Butter, which is moderately comedogenic and can clog pores in some individuals, especially those with oily or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 32,
+    "name": "Cacao seed butter",
+    "causes_acne": true,
+    "description": "A form of Cocoa butter, it is highly comedogenic and can clog pores, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 33,
+    "name": "Capea biruncinata var. denuda sonder",
+    "causes_acne": true,
+    "description": "Generally non-comedogenic, but can cause irritation or allergic reactions in sensitive individuals, potentially leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 34,
+    "name": "Capea biruncinata var. elongata sonder",
+    "causes_acne": true,
+    "description": "Similar to the previous variant, it is generally non-comedogenic but can cause irritation or allergic reactions in some people.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 35,
+    "name": "Carageenan gum",
+    "causes_acne": true,
+    "description": "Carrageenan can be comedogenic and cause irritation, leading to acne breakouts in some individuals.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 36,
+    "name": "Carastay c",
+    "causes_acne": true,
+    "description": "This ingredient may be comedogenic, leading to clogged pores and acne, especially in sensitive or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 39,
+    "name": "Carrageenan",
+    "causes_acne": true,
+    "description": "Carrageenan is known to be comedogenic and can cause clogged pores and irritation, leading to acne.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 40,
+    "name": "Carrageenan Moss",
+    "causes_acne": true,
+    "description": "Similar to carrageenan, it is comedogenic and can cause acne by clogging pores and irritating the skin.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 38,
+    "name": "Caulerpa filiformis",
+    "causes_acne": true,
+    "description": "Similar to other algae extracts, it is generally non-comedogenic but can cause irritation in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 37,
+    "name": "Caulerpa lentillifera extract",
+    "causes_acne": true,
+    "description": "Generally non-comedogenic, but can cause irritation or allergic reactions in some individuals, leading to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 41,
+    "name": "Cera alba",
+    "causes_acne": true,
+    "description": "A form of Beeswax, it is highly comedogenic and can form a barrier on the skin that traps oil, dirt, and bacteria, leading to clogged pores and acne.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 42,
+    "name": "Cera bianca",
+    "causes_acne": true,
+    "description": "Also known as white beeswax, it is highly comedogenic and can form a barrier on the skin, trapping oil, dirt, and bacteria, leading to clogged pores and acne.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 43,
+    "name": "Cera flava",
+    "causes_acne": true,
+    "description": "Known as yellow beeswax, it is similarly comedogenic and can cause acne by clogging pores and creating a barrier that traps impurities.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 44,
+    "name": "Cera olea",
+    "causes_acne": true,
+    "description": "This ingredient, also known as olive wax, is moderately comedogenic and can contribute to clogged pores and acne in some individuals.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 45,
+    "name": "Cetearyl Alcohol + Ceteareth 20",
+    "causes_acne": true,
+    "description": "This combination can be mildly comedogenic. Ceteareth 20 can sometimes irritate the skin and, when combined with cetearyl alcohol, can lead to clogged pores and breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "ceteareth20 and cetearyl alcohol"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Cetyl Acetate",
+    "causes_acne": true,
+    "description": "Cetyl acetate is comedogenic and can clog pores, leading to breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 47,
+    "name": "Chaetomorpha linum (aerea) cladophora radiosa",
+    "causes_acne": true,
+    "description": "Generally non-comedogenic, but can cause irritation or allergic reactions in sensitive skin, potentially leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 48,
+    "name": "Chlamydomonas reinhardtii extract",
+    "causes_acne": true,
+    "description": "This green algae extract is typically non-comedogenic, but sensitivities or reactions can cause breakouts in some individuals.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 49,
+    "name": "Chlorella",
+    "causes_acne": true,
+    "description": "Generally considered non-comedogenic, but can cause irritation or allergic reactions in sensitive individuals, leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": null,
+    "synonyms": [
+      "chlorella extract",
+      "chlorella vulgaris extract"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Chlorophyceae",
+    "causes_acne": true,
+    "description": "This class of green algae is usually non-comedogenic but can cause irritation or allergic reactions in some people, leading to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 51,
+    "name": "Chondrus Crispus (aka Irish Moss or Carageenan Moss)",
+    "causes_acne": true,
+    "description": "Known to be comedogenic, it can clog pores and cause irritation, leading to acne.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "chondrus crispus carrageenan extract",
+      "chondrus crispus extract"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Cladophora cf. subsimplex",
+    "causes_acne": true,
+    "description": "A type of green algae, generally non-comedogenic, but may cause irritation or breakouts in sensitive skin types.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 53,
+    "name": "Cladosiphon okamuranus extract",
+    "causes_acne": true,
+    "description": "Typically used for hydration, but as with many seaweeds, some people will experience acne from it.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 54,
+    "name": "Coal Tar",
+    "causes_acne": true,
+    "description": "Very irritating and pore-clogging for some. Though used in psoriasis and dandruff treatments, it can trigger acne due to its occlusive and inflammatory properties.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 55,
+    "name": "Coco-caprate",
+    "causes_acne": true,
+    "description": "Derived from coconut oil and Capric acid, it is moderately comedogenic and can clog pores in acne-prone individuals.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 56,
+    "name": "Cocoa Butter",
+    "causes_acne": true,
+    "description": "Highly comedogenic — known for clogging pores and causing breakouts, especially for oily or acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "cocoa seed butter",
+      "theobroma cacao cocoa seed butter"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Coconut Alkanes",
+    "causes_acne": true,
+    "description": "Derived from coconut, it is comedogenic in most formulations. Typically clogs pores and leads to breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 58,
+    "name": "Coconut Butter",
+    "causes_acne": true,
+    "description": "Similar to coconut oil and cocoa butter, it's highly comedogenic and will clog pores.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 59,
+    "name": "Coconut Extract",
+    "causes_acne": true,
+    "description": "Depending on the formulation, it is moderately comedogenic and may cause breakouts in acne-prone users.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "coconut acid",
+      "hydrogenated coconut acid"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Coconut Nucifera extract",
+    "causes_acne": true,
+    "description": "This is another form of coconut extract. While nourishing, it's highly comedogenic and can cause clogged pores.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 1,
+    "name": "Coconut Oil",
+    "causes_acne": true,
+    "description": "Highly comedogenic. It will clog pores and is often one of the top offenders for causing breakouts in acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "centrifuge extracted coconut oil",
+      "coconut kernel oil",
+      "coconut palm oil",
+      "cocos nucifera",
+      "cocos nucifera coconut fruit juice",
+      "cocos nucifera coconut oil",
+      "cocos nucifera coconutnoix de coco oil",
+      "copra oil",
+      "expeller pressed",
+      "hydrogenated coconut oil",
+      "non-hydrogenated coconut oil",
+      "organic cocos nucifera coconut oil",
+      "refined coconut oil",
+      "unrefined coconut oil",
+      "virgin coconut oil"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Cocos nucifera oil",
+    "causes_acne": true,
+    "description": "Same as coconut oil — very comedogenic, especially for those with oily or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 62,
+    "name": "cocos nucifera seed butter",
+    "causes_acne": true,
+    "description": "Essentially the butter form of coconut oil — highly comedogenic and a common pore-clogger.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 63,
+    "name": "Coenochloris signiensis extract",
+    "causes_acne": true,
+    "description": "A lesser-known algae derivative. Caution is advised due to the algae families tendency for irritation, especially on sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 64,
+    "name": "Colloidal Sulfur",
+    "causes_acne": true,
+    "description": "Used to reduce oil and has antibacterial properties, but will cause irritation or dryness in sensitive, leading to reactive breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 1,
+    "synonyms": []
+  },
+  {
+    "id": 67,
+    "name": "Corallina officinalis extract",
+    "causes_acne": true,
+    "description": "A red algae extract; often causes irritation and sensitivity.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 68,
+    "name": "Corn",
+    "causes_acne": true,
+    "description": "As a food ingredient, corn is typically not an issue. But in oil or extract form, it can clog pores and cause irritation depending on your skin type.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": [
+      "hydrolyzed corn protein",
+      "hydrolyzed corn starch"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Corn oil",
+    "causes_acne": true,
+    "description": "Moderately comedogenic. Known to clog pores and cause breakouts, especially for oily or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 65,
+    "name": "Cotton Awws Oil",
+    "causes_acne": true,
+    "description": "Moderately comedogenic, can clog pores and lead to breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 66,
+    "name": "Cotton Seed Oil",
+    "causes_acne": true,
+    "description": "Highly comedogenic. It can trap oils and bacteria in pores.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 70,
+    "name": "Creosote",
+    "causes_acne": true,
+    "description": "Strong irritant. Not common in modern skincare products, but when used, it can be very irritating and occlusive, triggering acne and skin issues.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 71,
+    "name": "Cystoseira tamariscifolia extract",
+    "causes_acne": true,
+    "description": "A brown algae extract. It may trigger breakouts in people sensitive to marine ingredients.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 72,
+    "name": "D & C Red # 17",
+    "causes_acne": true,
+    "description": "Synthetic dyes (especially reds) are known to be comedogenic, particularly in lip and cheek products. Can clog pores and cause breakouts around the mouth and cheeks.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "d c red 17",
+      "red 17"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "D & C Red # 21",
+    "causes_acne": true,
+    "description": "Synthetic dyes (especially reds) are known to be comedogenic, particularly in lip and cheek products. Can clog pores and cause breakouts around the mouth and cheeks.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "d c red 21",
+      "red 21"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "D & C Red # 3",
+    "causes_acne": true,
+    "description": "Synthetic dyes (especially reds) are known to be comedogenic, particularly in lip and cheek products. Can clog pores and cause breakouts around the mouth and cheeks.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "d c red 3",
+      "red 33"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "D & C Red # 30",
+    "causes_acne": true,
+    "description": "Synthetic dyes (especially reds) are known to be comedogenic, particularly in lip and cheek products. Can clog pores and cause breakouts around the mouth and cheeks.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "d c red 30",
+      "red 30"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "D & C Red # 36",
+    "causes_acne": true,
+    "description": "Synthetic dyes (especially reds) are known to be comedogenic, particularly in lip and cheek products. Can clog pores and cause breakouts around the mouth and cheeks.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "d c red 36",
+      "red 36"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Decyl Oleate",
+    "causes_acne": true,
+    "description": "Highly comedogenic. It’s an ester of oleic acid and decanol, and it’s notorious for clogging pores and triggering breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 78,
+    "name": "Decyloleate",
+    "causes_acne": true,
+    "description": "An alternate naming convention for Decyl Oleate — highly comedogenic, causes clogged pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 79,
+    "name": "Dicotyledons succinate",
+    "causes_acne": true,
+    "description": "Very obscure ingredient and not often used in modern skincare; “dicotyledons” refers to a class of plants. If this is a plant oil-derived succinate, it will be moderately comedogenic, depending on fatty acid composition. All in all, we recommend staying away from this ingredient, especially if you have acne prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 80,
+    "name": "Dictyopteris membranacea",
+    "causes_acne": true,
+    "description": "A brown algae extract — algae-based ingredients often cause irritation in sensitive users.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 81,
+    "name": "Dictyopteris polypodioides",
+    "causes_acne": true,
+    "description": "A brown algae extract — algae-based ingredients often cause irritation in sensitive users.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "dictyopteris polypodioides extract"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Diethylhexyl sodium sulfosuccinate",
+    "causes_acne": true,
+    "description": "A surfactant — mildly comedogenic and can be irritating in higher concentrations, leading to reactive acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 83,
+    "name": "Diisooctyl succinate",
+    "causes_acne": true,
+    "description": "An emollient and ester — moderately to highly comedogenic, often cited as pore-clogging in acne-prone individuals.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 84,
+    "name": "Dilsea carnosa extract",
+    "causes_acne": true,
+    "description": "A red algae extract — algae often causes irritation or allergic breakouts, especially those with sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 85,
+    "name": "Dioctyl sodium sulfosuccinate",
+    "causes_acne": true,
+    "description": "A surfactant/emulsifier — it will irritate sensitive skin, often indirectly causing breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 86,
+    "name": "Dioctyl Succinate",
+    "causes_acne": true,
+    "description": "Similar to other succinate esters — moderately comedogenic, can clog pores.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 87,
+    "name": "Disodium laureth sulfosuccinate",
+    "causes_acne": true,
+    "description": "A gentler surfactant, lower risk of causing acne, but will still irritate sensitive skin, indirectly leading to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 88,
+    "name": "Disodium Monooleamido",
+    "causes_acne": true,
+    "description": "Derived from oleic acid, potentially comedogenic due to pore-clogging properties.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 89,
+    "name": "Disodium Monooleamido peg 2 sulfosuccinate",
+    "causes_acne": true,
+    "description": "Mildly comedogenic; specifically the oleamido portion will clog pores in sensitive individuals.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 90,
+    "name": "Disodium oleamido peg-2 sulfosuccinate",
+    "causes_acne": true,
+    "description": "Moderately comedogenic, it is problematic in large amounts and for oily skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 91,
+    "name": "Dodecanoic acid",
+    "causes_acne": true,
+    "description": "Also known as lauric acid — while it has antibacterial properties, it’s comedogenic for most skin types.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 92,
+    "name": "Dodecoic acid",
+    "causes_acne": true,
+    "description": "A variant of Dodecanoic/Lauric acid — making it moderately comedogenic.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 93,
+    "name": "Dodecylic acid",
+    "causes_acne": true,
+    "description": "Alternate name for lauric acid — comedogenic, despite its antimicrobial benefits.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 94,
+    "name": "Dunaliella salina extract",
+    "causes_acne": true,
+    "description": "A microalgae rich in beta-carotene — but it will trigger breakouts in sensitive or allergy-prone users.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 95,
+    "name": "Duodecylic acid",
+    "causes_acne": true,
+    "description": "A variant of Dodecanoic/Lauric acid — moderately comedogenic.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 96,
+    "name": "Durvillaea antarctica extract",
+    "causes_acne": true,
+    "description": "Brown seaweed extract — will irritate skin and trigger breakouts in individuals with sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 97,
+    "name": "Ecklonia cava",
+    "causes_acne": true,
+    "description": "A brown algae known for anti-inflammatory properties — generally non-comedogenic, but use caution if you have sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 98,
+    "name": "Ecklonia cava extract",
+    "causes_acne": true,
+    "description": "A brown algae known for anti-inflammatory properties — generally non-comedogenic, but use caution if you have sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 99,
+    "name": "Ecklonia radiata",
+    "causes_acne": true,
+    "description": "A type of brown kelp — can irritate sensitive skin, especially in leave-on products.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 100,
+    "name": "Enteromorpha compressa extract",
+    "causes_acne": true,
+    "description": "A green algae — individuals can experience irritation or breakouts from this ingredient.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 101,
+    "name": "Ethoxylated Lanolin",
+    "causes_acne": true,
+    "description": "A derivative of lanolin, which is highly comedogenic. It forms a barrier that traps oils and debris, leading to clogged pores and breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 102,
+    "name": "Ethylhexyl Palmitate",
+    "causes_acne": true,
+    "description": "Very comedogenic. This fatty acid ester mimics natural sebum and can clog pores easily.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 103,
+    "name": "Ethylhexyl Stearate",
+    "causes_acne": true,
+    "description": "Similar to palmitate, highly comedogenic, often found in moisturizers and makeup.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 104,
+    "name": "Eucheuma spinosum extract",
+    "causes_acne": true,
+    "description": "A red algae (seaweed) extract. Generally non-comedogenic, but will trigger breakouts in sensitive skin or if mixed with other comedogenic ingredients.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 105,
+    "name": "Fucoxanthin",
+    "causes_acne": true,
+    "description": "A pigment found in brown algae - mildly comedogenic, especially for those with more sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 106,
+    "name": "Fucus serratus",
+    "causes_acne": true,
+    "description": "A type of brown seaweed — lower risk, but algae will cause irritation for sensitive users, often leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 107,
+    "name": "Fucus vesiculosus",
+    "causes_acne": true,
+    "description": "Commonly known as bladderwrack — generally non-comedogenic, but will cause reactive acne to sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "fucus vesiculosus extract"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Gamtae extract",
+    "causes_acne": true,
+    "description": "Korean name for seaweed (typically Enteromorpha) — often irritates sensitive skin types.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 109,
+    "name": "Gelidiella acerosa extract",
+    "causes_acne": true,
+    "description": "Red algae — algae-based ingredients can cause breakouts due to sensitivity or occlusion.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 110,
+    "name": "Gelidium amansii extract",
+    "causes_acne": true,
+    "description": "A red algae — low comedogenicity, but irritation-prone users may react.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 111,
+    "name": "Gigartina stellata extract",
+    "causes_acne": true,
+    "description": "Red algae — generally safe, but watch for algae sensitivity as it can cause breakouts in some.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 112,
+    "name": "Glyceryl monostearate",
+    "causes_acne": true,
+    "description": "Moderately comedogenic. It's a fatty acid ester that can block pores in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 113,
+    "name": "Glyceryl Stearate SE",
+    "causes_acne": true,
+    "description": "Moderately comedogenic - may cause breakouts depending on concentration and formulation. Due to this, it's often best to stay away!",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 114,
+    "name": "Glyceryl-3 Diisostearate",
+    "causes_acne": true,
+    "description": "Highly comedogenic. Known pore-clogger for all skin types.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 116,
+    "name": "Glycine max",
+    "causes_acne": true,
+    "description": "Also know as soybean - moderately comedogenic depending on its form (oil, protein extract). We recommend staying away from this ingredient.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 115,
+    "name": "Glycine soja oil",
+    "causes_acne": true,
+    "description": "Moderately comedogenic. It’s an occlusive oil that can trap sebum and bacteria in pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 117,
+    "name": "Gracilariopsis chorda extract",
+    "causes_acne": true,
+    "description": "A red algae — may cause breakouts in individuals with algae sensitivities.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 119,
+    "name": "Haematococcus pluvialis",
+    "causes_acne": true,
+    "description": "A microalgae high in astaxanthin — may cause irritation or reactions in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 118,
+    "name": "Haematococcus pluvialis extract",
+    "causes_acne": true,
+    "description": "A microalgae high in astaxanthin — may cause irritation or reactions in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 120,
+    "name": "Haslea ostrearia extract",
+    "causes_acne": true,
+    "description": "Blue microalgae — very rare in modern skincare products, but often causes irritation in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 121,
+    "name": "Hexadecanol acetate",
+    "causes_acne": true,
+    "description": "Alternate name for cetyl acetate — highly comedogenic, known to clog pores.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 122,
+    "name": "Hexadecyl Acetate",
+    "causes_acne": true,
+    "description": "Alternate name for cetyl acetate — highly comedogenic, known to clog pores.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 123,
+    "name": "Hexadecyl Alcohol",
+    "causes_acne": true,
+    "description": "Also known as cetyl alcohol — mildly comedogenic. Some tolerate it fine, but others break out depending on concentration. We recommend staying away from using this ingredient.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 124,
+    "name": "Himanthalia elongata extract",
+    "causes_acne": true,
+    "description": "Brown seaweed — may cause breakouts in those reactive to algae or sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 125,
+    "name": "Hizikia fusiforme extract",
+    "causes_acne": true,
+    "description": "A brown seaweed used often in Asian skincare — typically non-comedogenic, though it often causes acne-like irritation in sensitive individuals.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 126,
+    "name": "Hydrogenated Vegetable Oil",
+    "causes_acne": true,
+    "description": "Highly comedogenic. Occlusive and pore-clogging — known to cause breakouts in acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 127,
+    "name": "Hydrolyzed rhodophycea extract",
+    "causes_acne": true,
+    "description": "Red algae — usually non-comedogenic on its own, but when combined with other rich emulsifiers, can be problematic for oily skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 128,
+    "name": "Hydrous magnesium silicate",
+    "causes_acne": true,
+    "description": "AKA Talc - it's controversial. It’s not pore-clogging on its own, but it will trap oils and bacteria under your makeup, leading to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 1,
+    "synonyms": []
+  },
+  {
+    "id": 129,
+    "name": "Hypnea musciformis extract",
+    "causes_acne": true,
+    "description": "Another red algae — can cause acne due to algae sensitivity or over-moisturizing effects.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 130,
+    "name": "Hypneaceae extract",
+    "causes_acne": true,
+    "description": "Family of red algae — can cause acne due to algae sensitivity or over-moisturizing effects.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 131,
+    "name": "Irish Moss",
+    "causes_acne": true,
+    "description": "Comedogenic for many. It can clog pores and is known to be an irritant or breakout trigger for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 132,
+    "name": "Isocetyl Alcohol",
+    "causes_acne": true,
+    "description": "A fatty alcohol — moderately comedogenic, can trap oils and debris in pores.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 133,
+    "name": "Isocetyl Stearate",
+    "causes_acne": true,
+    "description": "A highly comedogenic ester. Known to clog pores, especially in leave-on products.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 134,
+    "name": "Isodecyl Oleate",
+    "causes_acne": true,
+    "description": "A lightweight ester, but moderately to highly comedogenic. Can cause breakouts in oily or acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 135,
+    "name": "Isohexadecanol",
+    "causes_acne": true,
+    "description": "A synthetic alcohol, similar to other long-chain alcohols — mild to moderate comedogenicity depending on the formulation.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 136,
+    "name": "Isohexadecyl alcohol",
+    "causes_acne": true,
+    "description": "A synthetic alcohol, can clog pores if used in higher concentrations or occlusive formulas.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 137,
+    "name": "Isohexadecyl stearate",
+    "causes_acne": true,
+    "description": "Highly comedogenic. This ester is known to cause breakouts in acne-prone skin due to its pore-clogging properties.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 138,
+    "name": "Isooctadecyl isooctadecanoate",
+    "causes_acne": true,
+    "description": "Very comedogenic. It's a long-chain ester with a high tendency to clog pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 139,
+    "name": "Isopalmitic alcohol",
+    "causes_acne": true,
+    "description": "A fatty alcohol — moderately comedogenic, depending on concentration and skin type.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 140,
+    "name": "Isopalmityl alcohol",
+    "causes_acne": true,
+    "description": "A fatty alcohol — can trap oil and debris, leading to blocked pores and breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 141,
+    "name": "Isopropyl isodecanoate",
+    "causes_acne": true,
+    "description": "Moderately comedogenic. Common in moisturizers and foundations. Can clog pores in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 142,
+    "name": "Isopropyl Isostearate",
+    "causes_acne": true,
+    "description": "Highly comedogenic. Very commonly flagged ingredient for causing breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 143,
+    "name": "Isopropyl Linolate",
+    "causes_acne": true,
+    "description": "While linoleic acid is acne-friendly, this ester form is comedogenic and can clog pores.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 144,
+    "name": "Isopropyl Myristate",
+    "causes_acne": true,
+    "description": "One of the most infamously comedogenic ingredients. It penetrates deeply and clogs pores fast — especially dangerous for acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 145,
+    "name": "Isopropyl Palmitate",
+    "causes_acne": true,
+    "description": "Very comedogenic. Known pore-clogger. Can rapidly worsen acne when used in leave-on products.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 146,
+    "name": "Isostearyl Isostearate",
+    "causes_acne": true,
+    "description": "Highly comedogenic. Included on our “do not use ever” list for any individual.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 147,
+    "name": "Isostearyl Neopentanoate",
+    "causes_acne": true,
+    "description": "Highly comedogenic. Known to clog pores depending on concentration. We typically recommend staying away from it.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 148,
+    "name": "Jania rubens extract",
+    "causes_acne": true,
+    "description": "A red algae extract — like most algae, can irritate sensitive or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 149,
+    "name": "Jojoba wax",
+    "causes_acne": true,
+    "description": "Low comedogenicity. In wax form or heavy blends, it can clog pores in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 150,
+    "name": "Kappaphycus alvarezii extract",
+    "causes_acne": true,
+    "description": "A type of red algae (carrageenan source) — comedogenic and known to cause breakouts in sensitive or acne-prone users.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 151,
+    "name": "Karite",
+    "causes_acne": true,
+    "description": "Also known as shea butter, it’s rich and emollient, but its heavy texture can clog pores, especially in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 152,
+    "name": "Kelp",
+    "causes_acne": true,
+    "description": "Kelp is a type of seaweed high in iodine, which has been linked to breakouts and irritation in sensitive or acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 153,
+    "name": "Kousou ekisu",
+    "causes_acne": true,
+    "description": "This plant extract may be comedogenic due to its rich composition, which can disrupt the skin barrier and clog pores.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 154,
+    "name": "Laminaria",
+    "causes_acne": true,
+    "description": "A seaweed extract, often high in iodine, which may contribute to breakouts in sensitive or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 155,
+    "name": "Laminaria Digitata Extract",
+    "causes_acne": true,
+    "description": "This specific type of seaweed is iodine-rich, which may stimulate acne flare-ups in some individuals.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 156,
+    "name": "Laminaria Saccharina Extract (Laminaria Saccharine)",
+    "causes_acne": true,
+    "description": "A seaweed-derived ingredient that may trigger breakouts due to iodine content.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 157,
+    "name": "Lanolin acetate",
+    "causes_acne": true,
+    "description": "Derived from wool, lanolin derivatives are known pore-cloggers, particularly problematic for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 158,
+    "name": "Lanolin alcohol acetate",
+    "causes_acne": true,
+    "description": "Highly comedogenic. This variant of lanolin can occlude the skin and cause pimples and bumps.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 159,
+    "name": "Lanolin polyoxyethylene ether",
+    "causes_acne": true,
+    "description": "A synthetic lanolin derivative that may clog pores in individuals prone to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 160,
+    "name": "Laureth-23",
+    "causes_acne": true,
+    "description": "A surfactant and emulsifier that can be moderately comedogenic, leading to clogged pores with repeated use.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "laureth23"
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Laureth-4",
+    "causes_acne": true,
+    "description": "Highly comedogenic; a common acne trigger found in many cosmetics and cleansers.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": [
+      "laureth4"
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Lauric Acid",
+    "causes_acne": true,
+    "description": "A fatty acid with antimicrobial properties, but very comedogenic and known to block pores.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 163,
+    "name": "Laurostearic acid",
+    "causes_acne": true,
+    "description": "A fatty acid that has a high likelihood of clogging pores and worsening acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 164,
+    "name": "Lcd",
+    "causes_acne": true,
+    "description": "Liquor carbonis detergens - Coal tar derivative often used for skin conditions, but it can be occlusive and irritating, potentially leading to acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 165,
+    "name": "Linolate",
+    "causes_acne": true,
+    "description": "A derivative of linoleic acid that may be comedogenic depending on formulation and concentration.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 166,
+    "name": "Liquor carbonis detergens",
+    "causes_acne": true,
+    "description": "Coal tar solution—highly occlusive and known to worsen acne in sensitive users.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 167,
+    "name": "Liquor picis carbonis",
+    "causes_acne": true,
+    "description": "Also a form of coal tar, known to clog pores and cause irritation in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 168,
+    "name": "Lithothamnium calcareum powder",
+    "causes_acne": true,
+    "description": "A type of calcified algae, comedogenic due to its mineral-rich composition and occlusive texture.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 169,
+    "name": "Lpc",
+    "causes_acne": true,
+    "description": "Lanolin-based compound; generally a pore-clogging ingredient for acne-prone individuals.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 170,
+    "name": "Macroalgae",
+    "causes_acne": true,
+    "description": "Seaweed family, often iodine-rich, which can aggravate acne when applied topically.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 171,
+    "name": "Macrocystis pyrifera extract",
+    "causes_acne": true,
+    "description": "Brown algae rich in iodine, which may contribute to breakouts in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 172,
+    "name": "Mangifera indica seed butter",
+    "causes_acne": true,
+    "description": "Otherwise known as Mango Seed Butter - Rich and nourishing, but comedogenic for many — known to block pores.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 173,
+    "name": "Mango Butter",
+    "causes_acne": true,
+    "description": "It’s highly emollient and will trigger breakouts on oily or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 174,
+    "name": "Marula",
+    "causes_acne": true,
+    "description": "It can be too rich for oily skin types and may cause clogged pores.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 175,
+    "name": "Marula oil",
+    "causes_acne": true,
+    "description": "Emollient and antioxidant-rich but may cause breakouts in acne-prone skin due to its heavy texture.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 176,
+    "name": "Methylsilanol mannuronate",
+    "causes_acne": true,
+    "description": "A silicone-algae derivative used for hydration, but it may trap other ingredients and oils against the skin, leading to congestion.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 177,
+    "name": "Mink Oil",
+    "causes_acne": true,
+    "description": "Very rich and highly comedogenic — strongly associated with clogged pores and acne.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 178,
+    "name": "Moss",
+    "causes_acne": true,
+    "description": "Botanical extracts like moss can be rich and hydrating but may trigger acne through pore congestion or allergic responses.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 179,
+    "name": "Myristate",
+    "causes_acne": true,
+    "description": "A general category for esters of myristic acid; many are highly comedogenic and can block pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "isopropyl myristate",
+      "magnesium myristate",
+      "myristyl myristate",
+      "octyldodecyl myristate",
+      "polyglyceryl10 myristate",
+      "ppg3 benzyl elther myristate",
+      "zinc myristate"
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Myristic Acid",
+    "causes_acne": true,
+    "description": "A fatty acid that is known to be comedogenic and frequently contributes to acne.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 181,
+    "name": "Myristyl",
+    "causes_acne": true,
+    "description": "Prefix usually denoting derivatives of myristic acid, many of which clog pores and exacerbate acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "myristyl ether propionate",
+      "ppg2 myristyl ether propionate"
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Myristyl Lactate",
+    "causes_acne": true,
+    "description": "An emollient ester that can be comedogenic and problematic for breakout-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 183,
+    "name": "Myristyl Myristate",
+    "causes_acne": true,
+    "description": "Very comedogenic — known to occlude pores and trigger breakouts, especially in sensitive skin.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 184,
+    "name": "Myristyl Propionate",
+    "causes_acne": true,
+    "description": "A synthetic ester that gives a smooth feel to the skin but is often comedogenic.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 185,
+    "name": "N-hexadecyl alcohol",
+    "causes_acne": true,
+    "description": "A fatty alcohol that can clog pores due to its occlusive nature.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 186,
+    "name": "N-hexadecyl ethanoate",
+    "causes_acne": true,
+    "description": "Similar to other long-chain fatty alcohols and esters, which are generally pore-clogging.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 187,
+    "name": "Octadecanoic acid",
+    "causes_acne": true,
+    "description": "Also known as Stearic Acid - common fatty acid that is highly comedogenic and can cause breakouts in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 188,
+    "name": "Octadecyl heptanoate",
+    "causes_acne": true,
+    "description": "An emollient ester that may be pore-clogging depending on concentration and formulation. We recommend staying clear of it.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 189,
+    "name": "Octyl Palmitate",
+    "causes_acne": true,
+    "description": "Very comedogenic — a known acne trigger due to its occlusive, waxy nature.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 190,
+    "name": "Octyl Stearate",
+    "causes_acne": true,
+    "description": "Very comedogenic — it smooths skin but clogs pores easily.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 191,
+    "name": "Oleth-3",
+    "causes_acne": true,
+    "description": "A surfactant that can disrupt the skin barrier and lead to pore congestion.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "oleth3 phosphate"
+    ]
+  },
+  {
+    "id": 192,
+    "name": "Oleth-3 phosphate",
+    "causes_acne": true,
+    "description": "A more irritating variant, especially in leave-on products — may trigger acne in sensitive individuals.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 193,
+    "name": "Oleyl Alcohol",
+    "causes_acne": true,
+    "description": "A fatty alcohol that is considered moderately comedogenic and may cause breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 194,
+    "name": "Palmaria palmata extract",
+    "causes_acne": true,
+    "description": "Red algae, potentially problematic for acne-prone users due to iodine and mineral content.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 195,
+    "name": "Palmityl Acetate",
+    "causes_acne": true,
+    "description": "An ester that may be comedogenic, often used as an emollient in skincare.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 196,
+    "name": "Palmityl Alcohol",
+    "causes_acne": true,
+    "description": "Fatty alcohol that can be comedogenic depending on skin type and product formulation.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 197,
+    "name": "Parkii",
+    "causes_acne": true,
+    "description": "Also known as Shea Butter - Rich and moisturizing, but frequently clogs pores in oily and acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 200,
+    "name": "PEG 16 Lanolin",
+    "causes_acne": true,
+    "description": "Lanolin derivative known to clog pores, especially when combined with PEGs which can increase penetration and irritation.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 198,
+    "name": "PEG 2 Sulfosuccinate",
+    "causes_acne": true,
+    "description": "A surfactant that may be irritating or barrier-disrupting, leading to acne indirectly.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 199,
+    "name": "PEG 2- Sulfosuccinate",
+    "causes_acne": true,
+    "description": "A surfactant that may be irritating or barrier-disrupting, leading to acne indirectly.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 201,
+    "name": "PEG 200 Dilaurate",
+    "causes_acne": true,
+    "description": "A synthetic compound that can be irritating or comedogenic, depending on formulation.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 203,
+    "name": "PEG 8 Stearate",
+    "causes_acne": true,
+    "description": "Emulsifier derived from stearic acid — moderately comedogenic and may cause breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "peg8 stearate"
+    ]
+  },
+  {
+    "id": 202,
+    "name": "PEG-75",
+    "causes_acne": true,
+    "description": "A lower molecular weight PEG that is often comedogenic, especially when combined with other occlusive agents.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": [
+      "peg 75"
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Pelvetia canaliculata extract",
+    "causes_acne": true,
+    "description": "A brown algae extract rich in iodine — potentially acne-triggering in sensitive users.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 205,
+    "name": "PES",
+    "causes_acne": true,
+    "description": "Depending on the full ingredient list, PES can be occlusive and may trap oil and bacteria.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 209,
+    "name": "PG Monostearate",
+    "causes_acne": true,
+    "description": "Can be moderately comedogenic and irritating for sensitive skin types.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 210,
+    "name": "PGMS",
+    "causes_acne": true,
+    "description": "Abbreviation of Propylene Glycol Monostearate - often clogs pores due to its waxy, emulsifying texture.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 206,
+    "name": "Phaeodactylum tricornutum extract",
+    "causes_acne": true,
+    "description": "A type of microalgae with antioxidant benefits, but can be irritating or pore-clogging in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 207,
+    "name": "Phaeophyceae",
+    "causes_acne": true,
+    "description": "Brown seaweed family — commonly high in iodine, which may worsen acne in some.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 208,
+    "name": "Pix carbonis",
+    "causes_acne": true,
+    "description": "Also known as coal tar — occlusive and known to irritate or clog pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 214,
+    "name": "Plankton",
+    "causes_acne": true,
+    "description": "General term for marine extracts — high in minerals and iodine, can cause flare-ups in some users.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "plankton extract"
+    ]
+  },
+  {
+    "id": 215,
+    "name": "Polyethylene glycol 200",
+    "causes_acne": true,
+    "description": "PEG with relatively low comedogenicity, but may still irritate sensitive skin or disrupt the barrier.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 216,
+    "name": "Polyethylene glycol dodecyl ether",
+    "causes_acne": true,
+    "description": "A surfactant that may disrupt the skin barrier and trap oil, leading to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 217,
+    "name": "Polyethylene glycol jojoba acid",
+    "causes_acne": true,
+    "description": "May clog pores due to the fatty acid component, despite being a modified oil.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 218,
+    "name": "Polyethylene glycol lauryl ether",
+    "causes_acne": true,
+    "description": "Surfactant that can be irritating and possibly comedogenic when left on the skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 219,
+    "name": "Polyethylene glycol monododecyl ether",
+    "causes_acne": true,
+    "description": "Can disrupt the skin barrier and clog pores depending on the product formulation.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 220,
+    "name": "Polyethylene glycol stearate",
+    "causes_acne": true,
+    "description": "Derived from stearic acid — can be comedogenic in acne-prone users.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 223,
+    "name": "Polyglyceryl-3 Diisostearate",
+    "causes_acne": true,
+    "description": "Often used in natural cosmetics but has a high comedogenicity — known pore-clogger.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "polyglyceryl3 diisostearate"
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Polyglyceryl-3-Disostearate",
+    "causes_acne": true,
+    "description": "Often used in natural cosmetics but has a high comedogenicity — clogs pores and not suitable for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 221,
+    "name": "Polyoxyethylene lauryl ether",
+    "causes_acne": true,
+    "description": "Surfactant that may trap debris and disrupt barrier, increasing acne risk.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 222,
+    "name": "Polysiphonia elongata extract",
+    "causes_acne": true,
+    "description": "A red algae extract — can be rich in iodine and lead to breakouts in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 225,
+    "name": "Porphyra umbilicalis",
+    "causes_acne": true,
+    "description": "A red algae extract that can cause irritation or breakouts due to iodine content.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 226,
+    "name": "Porphyridium",
+    "causes_acne": true,
+    "description": "A red microalgae often used for hydration — can cause congestion in acne-prone skin due to its rich polysaccharide content.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "porphyridium cruentum extract"
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Porphyridium cruentum extract",
+    "causes_acne": true,
+    "description": "A red microalgae often used for hydration — rich in bioactives that may be too heavy for sensitive or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 228,
+    "name": "Porphyridium polysaccharide",
+    "causes_acne": true,
+    "description": "Hydrating but potentially film-forming and pore-clogging depending on other ingredients.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 229,
+    "name": "Potassium Chloride",
+    "causes_acne": true,
+    "description": "Can be mildly comedogenic and contribute to follicular irritation and breakouts.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 230,
+    "name": "Potassium Salt",
+    "causes_acne": true,
+    "description": "Depending on the compound, may disrupt skin’s natural balance and lead to acne flare-ups.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 213,
+    "name": "PPG 2 Myristyl Ether Propionate",
+    "causes_acne": true,
+    "description": "Highly occlusive — known to trap debris in pores and aggravate acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 212,
+    "name": "PPG 2 Myristyl Propionate",
+    "causes_acne": true,
+    "description": "Can smooth skin but may cause breakouts due to high comedogenic rating.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 211,
+    "name": "PPG-2 Myristyl",
+    "causes_acne": true,
+    "description": "Ester of propylene glycol and myristyl alcohol — potentially pore-clogging and irritating.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 231,
+    "name": "Propanoic Acid",
+    "causes_acne": true,
+    "description": "Occurs naturally in sweat; excessive presence or use may disrupt skin microbiome.",
+    "face_reality": false,
+    "comedogenic_score": 1,
+    "synonyms": []
+  },
+  {
+    "id": 232,
+    "name": "Propylene Glycol Monostearate",
+    "causes_acne": true,
+    "description": "Waxy emulsifier — moderately comedogenic and known to worsen acne in sensitive skin.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 233,
+    "name": "Pyrene coal tar pitch",
+    "causes_acne": true,
+    "description": "Highly occlusive and irritating — not suitable for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 234,
+    "name": "Red Algae",
+    "causes_acne": true,
+    "description": "Rich in iodine — often leads to breakouts in acne-prone users.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 236,
+    "name": "Rhodophyceae extract",
+    "causes_acne": true,
+    "description": "Yet another red algae derivative — iodine content may trigger comedones and inflammation.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 235,
+    "name": "Rhodophyta",
+    "causes_acne": true,
+    "description": "The scientific name for red algae — associated with iodine-triggered acne.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 237,
+    "name": "Sargassum filipendula extract",
+    "causes_acne": true,
+    "description": "Brown algae known for high iodine content, often problematic for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 238,
+    "name": "Sargassum fusiforme extract",
+    "causes_acne": true,
+    "description": "Brown algae — iodine-rich and may clog pores in sensitive individuals.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 239,
+    "name": "Sclerocarya birrea",
+    "causes_acne": true,
+    "description": "The botanical name for Marula — heavy oil that may be too rich for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 240,
+    "name": "Sclerocarya birrea seed oil",
+    "causes_acne": true,
+    "description": "Marula oil — emollient and rich, often clogs pores in oily or acne-prone skin types.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 242,
+    "name": "Sea fern",
+    "causes_acne": true,
+    "description": "Botanical extract that may be rich in iodine or minerals — potentially pore-clogging.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 241,
+    "name": "Seaweed",
+    "causes_acne": true,
+    "description": "General term for algae — usually rich in iodine, a well-known acne trigger.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 243,
+    "name": "Sesame",
+    "causes_acne": true,
+    "description": "Heavy oil with high comedogenic rating — commonly triggers breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "sesame oil",
+      "sesamum indicum",
+      "sesamum indicum sesame",
+      "sesamum indicum sesame oil",
+      "sesamum indicum sesame seed oil",
+      "sesamum indicum sesame seed powder"
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Sesamum indicum",
+    "causes_acne": true,
+    "description": "Sesame oil’s botanical name — pore-clogging and not ideal for acne-prone users.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 245,
+    "name": "Shark Liver Oil",
+    "causes_acne": true,
+    "description": "Very emollient and rich in fatty acids — highly comedogenic.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 246,
+    "name": "Shark Squalene",
+    "causes_acne": true,
+    "description": "Natural squalene from sharks (different from squalane) — oxidizes quickly and clogs pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 247,
+    "name": "Shea",
+    "causes_acne": true,
+    "description": "Rich and nourishing but frequently clogs pores in oily/acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 248,
+    "name": "Shea Butter",
+    "causes_acne": true,
+    "description": "Rich and nourishing but frequently clogs pores in oily/acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "butyrospermum parkii butter butyrospermum parkii shea butter",
+      "butyrospermum parkii shea butter",
+      "butyrospermum parkii shea butter extract",
+      "butyrospermum parkii shea oil",
+      "shea",
+      "shea butter ethyl esters",
+      "shea butterbutyrospermum parkii butter"
+    ]
+  },
+  {
+    "id": 249,
+    "name": "Sheep alcohol",
+    "causes_acne": true,
+    "description": "Derived from lanolin — known for clogging pores and triggering breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 250,
+    "name": "Simmondsia chinensis seed wax",
+    "causes_acne": true,
+    "description": "Otherwise known as Jojoba Seed Wax. Though jojoba oil is generally non-comedogenic, the wax form can be heavier and may clog pores for some individuals.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 251,
+    "name": "Sles",
+    "causes_acne": true,
+    "description": "Sodium Laureth Sulfate. A harsh surfactant — can disrupt the skin barrier and lead to irritation, dryness, and rebound oiliness.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 252,
+    "name": "Slo",
+    "causes_acne": true,
+    "description": "Sodium Laureth Oleate. Can be occlusive or irritating — depending on exact compound, may contribute to breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 253,
+    "name": "Sls",
+    "causes_acne": true,
+    "description": "Sodium Lauryl Sulfate. Highly irritating and known to cause inflammation and barrier disruption, which can exacerbate acne.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 254,
+    "name": "Sodium Alginate",
+    "causes_acne": true,
+    "description": "A seaweed-derived thickener — may trap oils and other pore-clogging substances on the skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 255,
+    "name": "Sodium Alkylethersulfate",
+    "causes_acne": true,
+    "description": "A surfactant that can be irritating to the skin and lead to acne flare-ups.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 256,
+    "name": "Sodium Docusate",
+    "causes_acne": true,
+    "description": "An emulsifier that can be mildly comedogenic, depending on concentration.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 257,
+    "name": "Sodium Dodecyl sulphate",
+    "causes_acne": true,
+    "description": "Very harsh on the skin and a known acne trigger in sensitive individuals.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 258,
+    "name": "Sodium Laureth Sulfate",
+    "causes_acne": true,
+    "description": "Less irritating than SLS (Sodium Lauryl Sulfate) but still known to dry out and irritate acne-prone skin.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 259,
+    "name": "Sodium Lauryl Ether sulfate",
+    "causes_acne": true,
+    "description": "Variant of SLES — can be irritating and lead to barrier disruption and acne.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 260,
+    "name": "Sodium Lauryl Sulfate",
+    "causes_acne": true,
+    "description": "Highly comedogenic and irritating; disrupts skin's natural balance and worsens acne for many.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 261,
+    "name": "Soja",
+    "causes_acne": true,
+    "description": "Also known as Soy. Can be hormonal for some people, especially if ingested, but topically it may also contribute to acne in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 262,
+    "name": "Solulan 16",
+    "causes_acne": true,
+    "description": "Lanolin derivative — moderately to highly comedogenic, can clog pores.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 263,
+    "name": "Sorbitan Monooleate",
+    "causes_acne": true,
+    "description": "A surfactant and emulsifier — known to be comedogenic in some formulations.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 264,
+    "name": "Sorbitan Oleate",
+    "causes_acne": true,
+    "description": "Can be pore-clogging depending on formulation and concentration.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "sorbitan oleate decylglucoside crosspolymer"
+    ]
+  },
+  {
+    "id": 265,
+    "name": "Soy",
+    "causes_acne": true,
+    "description": "Can impact hormones, and soy-derived oils or extracts can clog pores in topical formulations.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "hydrolyzed soy protein"
+    ]
+  },
+  {
+    "id": 266,
+    "name": "Soybean",
+    "causes_acne": true,
+    "description": "Heavy oil content — may be pore-clogging for those with oily or acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "glycine soja soybean oil",
+      "glycine soja soybean protein",
+      "glycine soja soybean seed extract",
+      "glycine soja soybean sterols",
+      "soja soybean seed extract"
+    ]
+  },
+  {
+    "id": 267,
+    "name": "Soybean Oil",
+    "causes_acne": true,
+    "description": "Comedogenic — tends to trap dirt and oil in pores and worsen acne.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "glycine soja oil soybean oil",
+      "glycine soja soybean extract"
+    ]
+  },
+  {
+    "id": 268,
+    "name": "Sphacelaria",
+    "causes_acne": true,
+    "description": "A type of brown algae — iodine-rich and may aggravate acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 269,
+    "name": "Spirulina",
+    "causes_acne": true,
+    "description": "Algae that can be beneficial internally, but topically it's often too rich and causes pore congestion.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 270,
+    "name": "Squalene",
+    "causes_acne": true,
+    "description": "Highly prone to oxidation, which can trigger breakouts and clog pores. (Note: squalane, a derivative is more stable and less comedogenic, but still can cause acne is individuals with sensitive skin.)",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 274,
+    "name": "Starch",
+    "causes_acne": true,
+    "description": "Can trap oils and create a paste-like film on the skin, leading to blocked pores and breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": [
+      "aluminum starch",
+      "aluminum starch octenylsuccinate",
+      "aluminum starch octenylsuccinate and boron nitride",
+      "corn starch powder",
+      "hydrogenated starch hydrolysate",
+      "hydroxypropyl starch",
+      "hydroxypropyl starch phosphate",
+      "sodium polyacrylate starch",
+      "tapioca starch",
+      "zea mays corn starch"
+    ]
+  },
+  {
+    "id": 271,
+    "name": "Steareth 10",
+    "causes_acne": true,
+    "description": "A PEG compound — can disrupt the skin barrier or increase penetration of comedogenic ingredients.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "steareth100"
+    ]
+  },
+  {
+    "id": 272,
+    "name": "Stearic Acid Tea",
+    "causes_acne": true,
+    "description": "Can be comedogenic and irritating, particularly when combined with fatty acids and surfactants.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 273,
+    "name": "Stearyl Heptanoate",
+    "causes_acne": true,
+    "description": "A fatty ester known to be highly comedogenic — often found in makeup and moisturizers.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 275,
+    "name": "Sulfated Castor Oil",
+    "causes_acne": true,
+    "description": "A modified version of a highly comedogenic oil — still tends to clog pores.",
+    "face_reality": true,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 276,
+    "name": "Sulfated Jojoba Oil",
+    "causes_acne": true,
+    "description": "Less comedogenic than castor oil, but modification often makes it pore-clogging, especially combined with other ingredients.",
+    "face_reality": true,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 277,
+    "name": "Sulfosuccinate",
+    "causes_acne": true,
+    "description": "A surfactant — mild on its own, but when combined with other irritants can contribute to acne indirectly.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 278,
+    "name": "Sulphated castor oil",
+    "causes_acne": true,
+    "description": "Modified version of a highly comedogenic oil — still tends to clog pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 279,
+    "name": "Talc",
+    "causes_acne": true,
+    "description": "Absorbent, but can trap oils, bacteria, and makeup in pores — controversial in modern skincare. We recommend avoiding this ingredient!",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 280,
+    "name": "Talcum",
+    "causes_acne": true,
+    "description": "Similar to Talc, it can contribute to acne mechanica (friction-based breakouts) and clogged pores.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 281,
+    "name": "Tea stearate",
+    "causes_acne": true,
+    "description": "Emulsifier that can be irritating or comedogenic in higher concentrations.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 282,
+    "name": "Tetradecanoic acid",
+    "causes_acne": true,
+    "description": "A fatty acid — highly comedogenic and often a breakout trigger in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 283,
+    "name": "Tetradecyl lactate",
+    "causes_acne": true,
+    "description": "Ester of lactic and fatty acids — known to clog pores and worsen acne in some.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 284,
+    "name": "Tetradecyl myristate",
+    "causes_acne": true,
+    "description": "Highly occlusive ester — smooths the skin but can block pores and cause breakouts.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 285,
+    "name": "Tetradecyl propionate",
+    "causes_acne": true,
+    "description": "Comedogenic ester, often found in makeup and moisturizers — known to cause clogged pores.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 286,
+    "name": "Theobroma butter",
+    "causes_acne": true,
+    "description": "Another name for cocoa butter — very rich and highly comedogenic.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 287,
+    "name": "Theobroma cocoa seed butter",
+    "causes_acne": true,
+    "description": "Also known as Cocoa Butter. One of the most comedogenic natural ingredients — strongly pore-clogging for most acne-prone users.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 288,
+    "name": "Theobroma oil",
+    "causes_acne": true,
+    "description": "Cocoa-derived oil — rich and waxy, known to block pores and worsen acne.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 289,
+    "name": "Triticum aestivum",
+    "causes_acne": true,
+    "description": "Very high in vitamin E, but also very comedogenic — often a breakout trigger.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 290,
+    "name": "Triticum vulgare",
+    "causes_acne": true,
+    "description": "Otherwise known as Wheat Germ Oil. Extremely comedogenic — notorious for clogging pores and worsening acne.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 291,
+    "name": "Turkey red oil",
+    "causes_acne": true,
+    "description": "A form of sulfated castor oil — often pore-clogging and irritating for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 294,
+    "name": "Ulva fasciata",
+    "causes_acne": true,
+    "description": "Another form of green algae — may be too rich for acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 293,
+    "name": "Ulva lactuca",
+    "causes_acne": true,
+    "description": "Green algae that can cause congestion and breakouts in some users.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 295,
+    "name": "Ulva rhacodes",
+    "causes_acne": true,
+    "description": "Similar to other algae — possible iodine content and pore-blocking properties.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 292,
+    "name": "Undaria Pinnatifida",
+    "causes_acne": true,
+    "description": "Brown algae — iodine-rich and potentially acne-triggering",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": [
+      "undaria pinnatifida extract"
+    ]
+  },
+  {
+    "id": 296,
+    "name": "Vegetable gelatin",
+    "causes_acne": true,
+    "description": "Film-forming and can trap dirt/oil on the skin — may lead to clogged pores.",
+    "face_reality": false,
+    "comedogenic_score": 2,
+    "synonyms": []
+  },
+  {
+    "id": 297,
+    "name": "Vitellaria paradoxa",
+    "causes_acne": true,
+    "description": "Shea Tree - The plant source of shea butter — rich oils that are highly comedogenic for many.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 298,
+    "name": "Vulvic acid",
+    "causes_acne": true,
+    "description": "Generally not comedogenic, but impurities could cause irritation. We recommend avoiding this ingredient.",
+    "face_reality": false,
+    "comedogenic_score": 1,
+    "synonyms": []
+  },
+  {
+    "id": 299,
+    "name": "Wakame",
+    "causes_acne": true,
+    "description": "Brown seaweed — rich in iodine, which can stimulate breakouts in acne-prone individuals.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 300,
+    "name": "Wheat",
+    "causes_acne": true,
+    "description": "May be comedogenic for some, especially in extract or oil form (e.g. wheat germ), and may trigger sensitivities in acne-prone skin.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": [
+      "potassium palmitoyl hydrolyzed wheat protein",
+      "triticum vulgare",
+      "triticum vulgare wheat flour lipids",
+      "triticum vulgare wheat germ oil"
+    ]
+  },
+  {
+    "id": 301,
+    "name": "Wheat Germ Glyceride",
+    "causes_acne": true,
+    "description": "Derived from wheat germ oil — retains many of the same pore-clogging characteristics; known to be comedogenic.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 302,
+    "name": "Wheat Germ Oil",
+    "causes_acne": true,
+    "description": "One of the most comedogenic oils — rich and nourishing, but very likely to clog pores and cause breakouts on any skin type.",
+    "face_reality": true,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 303,
+    "name": "Wool alcohol",
+    "causes_acne": true,
+    "description": "A lanolin derivative — highly occlusive and known for causing acne and irritation in sensitive skin.",
+    "face_reality": false,
+    "comedogenic_score": 4,
+    "synonyms": []
+  },
+  {
+    "id": 304,
+    "name": "Wool fat",
+    "causes_acne": true,
+    "description": "Also known as Lanolin. Extremely comedogenic; traps oil and bacteria in the pores — notorious for worsening acne.",
+    "face_reality": false,
+    "comedogenic_score": 5,
+    "synonyms": []
+  },
+  {
+    "id": 305,
+    "name": "Xanthophyta",
+    "causes_acne": true,
+    "description": "A yellow-green algae — less iodine than brown/red algae, but can still clog pores or irritate in some formulations.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  },
+  {
+    "id": 306,
+    "name": "Xylene",
+    "causes_acne": true,
+    "description": "A solvent — not directly comedogenic, but can disrupt the skin barrier, increasing susceptibility to breakouts and irritation.",
+    "face_reality": true,
+    "comedogenic_score": 1,
+    "synonyms": []
+  },
+  {
+    "id": 307,
+    "name": "Xylitol",
+    "causes_acne": true,
+    "description": "Usually non-comedogenic and used for hydration — generally safe for acne-prone skin unless paired with other ingredients. Due to this, we recommend staying away!",
+    "face_reality": false,
+    "comedogenic_score": 1,
+    "synonyms": []
+  },
+  {
+    "id": 308,
+    "name": "Zea mays",
+    "causes_acne": true,
+    "description": "Also known as Corn. Can be used as starch, oil, or extract. Corn oil is comedogenic, and starch can trap oils, potentially clogging pores.",
+    "face_reality": false,
+    "comedogenic_score": 3,
+    "synonyms": []
+  }
+]

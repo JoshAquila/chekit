@@ -1,0 +1,16 @@
+services:
+  chekit-core:
+    build: .
+    ports:
+      - "3333:3333"
+    env_file:
+      - .env
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3333
+      SQLITE_PATH: /app/data/chekit.sqlite
+    volumes:
+      - chekit-core-data:/app/data
+
+volumes:
+  chekit-core-data:

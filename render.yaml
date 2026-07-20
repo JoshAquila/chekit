@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: chekit-core
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    preDeployCommand: npm run import-data
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: SQLITE_PATH
+        value: /app/data/chekit.sqlite
+    disk:
+      name: chekit-core-data
+      mountPath: /app/data
+      sizeGB: 1

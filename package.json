@@ -1,0 +1,28 @@
+{
+  "name": "chekit-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Small ChekIt ingredient matching API backed by SQLite.",
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "init-db": "node scripts/init-db.js",
+    "import-data": "node scripts/import-ingredients-json.js",
+    "import-backend-seed": "node scripts/import-backend-seed.js",
+    "export-postgres": "node scripts/export-postgres.js",
+    "import-postgres": "node scripts/import-postgres-to-sqlite.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^17.2.1",
+    "fastify": "^5.4.0",
+    "pg": "^8.16.3"
+  }
+}
