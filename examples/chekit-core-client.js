@@ -47,7 +47,7 @@ export function createChekItCoreClient({ baseUrl = DEFAULT_BASE_URL, fetchImpl =
     },
 
     checkIngredients({ ingredientString, ingredients, onlyFaceReality = false }) {
-      return request('/check', {
+      return request('/api/check', {
         method: 'POST',
         body: JSON.stringify({
           ingredientString,
