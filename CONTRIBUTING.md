@@ -19,6 +19,15 @@ Thanks for helping improve ChekIt.
 
 ## Local Setup
 
+Fork `https://github.com/JoshAquila/chekit`, then clone your fork:
+
+```bash
+git clone https://github.com/<your-username>/chekit.git
+cd chekit
+```
+
+Then run:
+
 ```bash
 npm install
 npm run import-data

@@ -37,6 +37,20 @@ Expected result: `Cocos Nucifera` matches `Coconut Oil`, and `Isopropyl Myristat
 
 ## Setup
 
+### Fork And Clone
+
+If you want to contribute:
+
+1. Fork `https://github.com/JoshAquila/chekit`.
+2. Clone your fork:
+
+```bash
+git clone https://github.com/<your-username>/chekit.git
+cd chekit
+```
+
+3. Install dependencies and build the local SQLite database:
+
 ```bash
 cp .env.example .env
 npm install
@@ -77,7 +91,10 @@ Deploy steps:
 
 1. Push this repo to GitHub.
 2. In Render, create a new Blueprint from the repo.
-3. Deploy and verify `/health`.
+3. Select the `render.yaml` Blueprint.
+4. Deploy and verify `/health`.
+
+No Postgres URL is required for the public open-source deploy path. ChekIt Core builds SQLite from `data/ingredients.json`.
 
 ## Ingredient Data
 
