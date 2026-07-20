@@ -18,6 +18,14 @@ upsertIngredients([
     description: 'Seed row for local smoke testing.',
     comedogenic_score: 4,
     face_reality: true
+  },
+  {
+    id: 2,
+    name: 'myristate',
+    causes_acne: true,
+    description: 'Non-Face Reality smoke test row.',
+    comedogenic_score: 4,
+    face_reality: false
   }
 ]);
 
@@ -45,6 +53,25 @@ try {
     ) {
       throw new Error(JSON.stringify(body, null, 2));
     }
+  }
+
+  const faceRealityResponse = await server.inject({
+    method: 'GET',
+    url: '/ingredients?faceReality=true'
+  });
+
+  if (faceRealityResponse.statusCode !== 200) {
+    throw new Error(faceRealityResponse.body);
+  }
+
+  const faceRealityBody = JSON.parse(faceRealityResponse.body);
+  if (
+    faceRealityBody.onlyFaceReality !== true
+    || faceRealityBody.data.length !== 1
+    || faceRealityBody.data[0].name !== 'coconut oil'
+    || faceRealityBody.data.some((ingredient) => ingredient.faceReality !== true)
+  ) {
+    throw new Error(JSON.stringify(faceRealityBody, null, 2));
   }
 
   console.log('Smoke test passed.');

@@ -37,11 +37,15 @@ export function createChekItCoreClient({ baseUrl = DEFAULT_BASE_URL, fetchImpl =
       return request('/health');
     },
 
-    listIngredients({ limit = 100, offset = 0 } = {}) {
+    listIngredients({ limit = 100, offset = 0, faceReality = false } = {}) {
       const params = new URLSearchParams({
         limit: String(limit),
         offset: String(offset)
       });
+
+      if (faceReality) {
+        params.set('faceReality', 'true');
+      }
 
       return request(`/ingredients?${params.toString()}`);
     },

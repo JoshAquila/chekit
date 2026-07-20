@@ -23,11 +23,15 @@ export function buildServer() {
   fastify.get('/ingredients', async (request) => {
     const limit = Math.min(Number(request.query.limit || 100), 500);
     const offset = Math.max(Number(request.query.offset || 0), 0);
+    const onlyFaceReality = parseBooleanQuery(
+      request.query.faceReality ?? request.query.onlyFaceReality
+    );
 
     return {
-      data: listIngredients({ limit, offset }),
+      data: listIngredients({ limit, offset, onlyFaceReality }),
       limit,
-      offset
+      offset,
+      onlyFaceReality
     };
   });
 
@@ -57,6 +61,22 @@ export function buildServer() {
   fastify.post('/api/check', checkIngredients);
 
   return fastify;
+}
+
+function parseBooleanQuery(value) {
+  if (Array.isArray(value)) {
+    return parseBooleanQuery(value[0]);
+  }
+
+  if (typeof value === 'boolean') {
+    return value;
+  }
+
+  if (typeof value !== 'string') {
+    return false;
+  }
+
+  return ['1', 'true', 'yes'].includes(value.toLowerCase());
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
