@@ -175,6 +175,12 @@ Returns service health.
 
 Returns SQLite ingredient rows and their synonyms.
 
+Use `faceReality=true` to return only ingredients flagged by Face Reality:
+
+```bash
+curl -s "http://127.0.0.1:3333/ingredients?faceReality=true&limit=100"
+```
+
 ### `POST /api/check`
 
 Checks an ingredient list. `/check` is also registered locally, but `/api/check` is the recommended hosted endpoint.

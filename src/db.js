@@ -145,16 +145,17 @@ export function seedKnownSynonyms() {
   transaction();
 }
 
-export function listIngredients({ limit = 100, offset = 0 } = {}) {
+export function listIngredients({ limit = 100, offset = 0, onlyFaceReality = false } = {}) {
   const database = initDb();
   const rows = database
     .prepare(`
       SELECT i.*
       FROM ingredients i
+      WHERE (? = 0 OR i.face_reality = 1)
       ORDER BY i.name ASC
       LIMIT ? OFFSET ?
     `)
-    .all(limit, offset);
+    .all(onlyFaceReality ? 1 : 0, limit, offset);
   const synonymsForIngredient = database.prepare(`
     SELECT synonym FROM ingredient_synonyms WHERE ingredient_id = ? ORDER BY synonym ASC
   `);
