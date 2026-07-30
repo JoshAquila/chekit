@@ -85,7 +85,7 @@ Important Render behavior:
 - Render builds from `Dockerfile` via `runtime: docker`.
 - The service binds to `HOST=0.0.0.0` and Render's `PORT=10000`.
 - SQLite is stored on a persistent Render disk mounted at `/app/storage`.
-- `preDeployCommand: npm run import-data` builds SQLite from `data/ingredients.json` before the service starts.
+- `preDeployCommand: npm run import-data` builds SQLite from `/app/seed/ingredients.json` before the service starts.
 
 Deploy steps:
 
