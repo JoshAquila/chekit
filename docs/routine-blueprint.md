@@ -1,0 +1,253 @@
+# ChekIt Routine Blueprint
+
+ChekIt Routine Blueprint is a planned lead-generation quiz and routine recommendation layer for ChekIt Core.
+
+The goal is to let an esthetician or AI site builder create a simple, attractive frontend that asks 10 or fewer questions, submits answers to the ChekIt backend, and receives a plain-English skincare routine blueprint.
+
+## Product Goals
+
+- Keep the frontend simple enough for AI-assisted site builders to understand.
+- Keep the backend responsible for scoring, tie-breaking, lead payload shape, and optional delivery.
+- Require client email for lead generation.
+- Avoid database, email provider, or CRM complexity in v1.
+- Support generic outbound delivery so estheticians can route leads to Zapier, Make, Shopify, a CRM, email tools, or their own webhook endpoint.
+- Let the frontend decide whether the user sees results immediately, after confirmation, by email only, or both.
+
+## Working Name
+
+Preferred name: ChekIt Routine Blueprint.
+
+Avoid leading with "diagnostic" in public copy unless carefully framed, because it can sound medical. "Routine Blueprint" feels useful, friendly, and non-clinical.
+
+## Standard Questions
+
+V1 should use standard questions only. Custom questions can come later after the scoring model is stable.
+
+1. By midday, your skin usually feels...
+   - Tight or flaky
+   - Shiny or oily
+   - Oily in the T-zone but dry or normal elsewhere
+   - Comfortable and balanced
+   - Unpredictable or reactive
+
+2. After cleansing, your skin usually feels...
+   - Comfortable
+   - Tight
+   - Greasy again quickly
+   - Stingy, hot, or red
+   - It depends on the cleanser
+
+3. What are your top concerns? Pick up to 3.
+   - Breakouts
+   - Clogged pores
+   - Texture
+   - Dark spots or post-breakout marks
+   - Redness
+   - Dryness
+   - Fine lines
+   - Sensitivity
+
+4. How often do you break out?
+   - Rarely
+   - Around my cycle or occasionally
+   - Weekly
+   - Most days
+
+5. Do products often sting, burn, or cause redness?
+   - No
+   - Sometimes
+   - Often
+   - Only when I use active products
+
+6. Do you have flaking, tightness, roughness, or a "nothing moisturizes enough" feeling?
+   - No
+   - Mild
+   - Moderate
+   - Severe
+
+7. What are you currently using? Select all that apply.
+   - Cleanser
+   - Moisturizer
+   - Sunscreen
+   - Exfoliant or acids
+   - Retinoid
+   - Benzoyl peroxide
+   - Vitamin C
+   - None or not sure
+
+8. How often do you use exfoliants, retinoids, benzoyl peroxide, or other strong active products?
+   - Never
+   - 1-2 times per week
+   - 3-4 times per week
+   - Daily
+   - Multiple active products daily
+
+9. How often do you wear sunscreen in the morning?
+   - Daily
+   - Most days
+   - Only when I will be outside
+   - Rarely
+   - Never
+
+10. What kind of help are you looking for?
+   - A simple starter routine
+   - Acne-focused routine support
+   - Calming or barrier support
+   - Brightening or tone support
+   - A professional consultation
+
+## Required Lead Fields
+
+Routine submissions should require:
+
+- `lead.email`
+
+Recommended but optional:
+
+- `lead.name`
+- `lead.phone`
+- `lead.source`
+- `lead.consentToContact`
+
+If `lead.email` is missing or invalid, the backend should return a `400` response.
+
+## Scoring Buckets
+
+Each answer should add signals to a small set of known scoring buckets.
+
+- Skin type: `dry`, `oily`, `combination`, `balanced`, `sensitive`
+- Concerns: `acne`, `clogged_pores`, `texture`, `hyperpigmentation`, `redness`, `dryness`, `fine_lines`, `sensitivity`
+- Barrier health: `stable`, `watch`, `compromised`
+- Routine gaps: `cleanser`, `moisturizer`, `sunscreen`, `active_overuse`
+- Sun exposure: `protected`, `inconsistent`, `unprotected`
+- Lead intent: `starter`, `acne`, `barrier`, `brightening`, `consultation`
+
+## Tie-Breaking
+
+Avoid ambiguous "ties" by using deterministic tie-breakers.
+
+Recommended approach:
+
+1. Use weighted answer signals instead of single-point scoring.
+2. If two skin type buckets tie, choose the safer/more conservative routine path.
+3. Barrier concerns outrank actives. If barrier score is high, recommend calming and repair before exfoliation, retinoids, or acne actives.
+4. Sunscreen gaps outrank brightening recommendations. If SPF is inconsistent, make SPF the first brightening step.
+5. If acne and sensitivity both score high, recommend gentle acne support and professional consultation rather than aggressive active use.
+6. If confidence is low, label the result as a starter blueprint and recommend consultation.
+
+## Blueprint Output
+
+The backend should return a structured result that any frontend can render.
+
+Example shape:
+
+```json
+{
+  "resultId": "routine_blueprint_v1",
+  "summary": "Your answers suggest combination-leaning skin with clogged pores and a possible barrier watch-out.",
+  "skinProfile": {
+    "type": "combination",
+    "concerns": ["clogged_pores", "texture"],
+    "barrier": "watch",
+    "sunProtection": "inconsistent"
+  },
+  "routine": {
+    "morning": [
+      "Gentle cleanser or rinse",
+      "Lightweight moisturizer",
+      "Broad-spectrum sunscreen"
+    ],
+    "evening": [
+      "Gentle cleanser",
+      "Barrier-supporting moisturizer"
+    ],
+    "weekly": [
+      "Introduce active products slowly after the routine feels stable"
+    ]
+  },
+  "flags": [
+    "Prioritize daily sunscreen before brightening products",
+    "Avoid stacking multiple strong active products"
+  ],
+  "leadScore": "qualified",
+  "recommendedNextStep": "Book a consultation for a personalized acne-safe routine.",
+  "disclaimer": "Educational only. Not medical advice."
+}
+```
+
+## Confirmation And Results Flow
+
+Frontend builders should be told to include a confirmation page after submission.
+
+Suggested flow:
+
+1. User answers the quiz.
+2. User enters email before submission.
+3. Frontend submits answers to the backend.
+4. Backend generates the routine blueprint.
+5. Backend sends a delivery payload if an outbound destination is configured.
+6. Frontend shows a confirmation page.
+7. Depending on configuration, frontend may also show the user their results immediately.
+
+Recommended confirmation copy:
+
+"Your Routine Blueprint is ready. We sent your answers and recommendation details to the skincare professional connected to this form."
+
+If user-visible results are enabled:
+
+"You can review your starter blueprint below. Your esthetician may follow up with personalized recommendations."
+
+## Delivery Destinations
+
+The backend should support a generic outbound delivery URL, not a Zapier-only integration.
+
+Suggested env vars:
+
+```bash
+ROUTINE_DELIVERY_WEBHOOK_URL=
+ROUTINE_DELIVERY_SECRET=
+ROUTINE_SHOW_RESULTS=true
+```
+
+This lets estheticians send data to services such as:
+
+- Zapier
+- Make
+- Shopify
+- CRM systems
+- email marketing tools
+- custom endpoints
+
+Zapier note as of 2026-08-15: Zapier's official pricing and help docs list Webhooks by Zapier as available on Professional plans and higher, not the Free plan. ChekIt should document Zapier as an easy webhook option, but not promise that webhook-based routing works on Zapier Free.
+
+## Frontend Builder Expectations
+
+The backend should do the heavy lifting. The frontend should be easy for an AI-assisted builder to create.
+
+Frontend examples should support:
+
+- Simple Typeform-like single-question flow by default
+- Full-page or embedded usage
+- required email collection
+- optional name and phone fields
+- progress indicator
+- loading state
+- confirmation page
+- optional immediate result display
+- easy color, font, button, and border-radius customization
+- clear error handling if the backend is unavailable
+
+The default frontend example should look clean and calm for estheticians: simple typography, generous spacing, soft but not childish styling, and no busy dashboard UI.
+
+## Future AI Enhancement
+
+AI analysis should not be required in v1.
+
+Recommended future env vars:
+
+```bash
+ROUTINE_AI_ENABLED=false
+OPENAI_API_KEY=
+```
+
+If enabled, the backend can generate a more polished plain-English summary from the same scored result. The frontend should never hold an AI API key.
