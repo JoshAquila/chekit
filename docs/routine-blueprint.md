@@ -10,7 +10,8 @@ The goal is to let an esthetician or AI site builder create a simple, attractive
 - Keep the backend responsible for scoring, tie-breaking, lead payload shape, and optional delivery.
 - Require client email for lead generation.
 - Avoid database, email provider, or CRM complexity in v1.
-- Support generic outbound delivery so estheticians can route leads to Zapier, Make, Shopify, a CRM, email tools, or their own webhook endpoint.
+- Use Zapier Webhooks as the assumed setup path for non-technical estheticians.
+- Keep delivery generic under the hood so estheticians can also route leads to Make, Shopify through an automation tool, a CRM, email tools, or their own webhook endpoint.
 - Let the frontend decide whether the user sees results immediately, after confirmation, by email only, or both.
 
 ## Working Name
@@ -197,17 +198,38 @@ If user-visible results are enabled:
 
 "You can review your starter blueprint below. Your esthetician may follow up with personalized recommendations."
 
-## Delivery Destinations
+## Webhook Delivery
 
-The backend should support a generic outbound delivery URL, not a Zapier-only integration.
+Webhook delivery should be the primary v1 lead routing path.
 
-Suggested env vars:
+Zapier should be the assumed tutorial path because it is familiar, approachable, and good enough for a warm lead tool. ChekIt should still implement a generic webhook POST, not a Zapier-specific integration.
+
+Recommended simple env vars:
 
 ```bash
-ROUTINE_DELIVERY_WEBHOOK_URL=
-ROUTINE_DELIVERY_SECRET=
-ROUTINE_SHOW_RESULTS=true
+ROUTINE_WEBHOOK_URL=
+ROUTINE_RESULT_VISIBILITY=confirmation_only
 ```
+
+`ROUTINE_WEBHOOK_URL` is the only integration variable most users should need. It can be a Zapier Catch Hook URL, Make webhook URL, Pipedream URL, n8n webhook URL, Activepieces webhook URL, or custom endpoint.
+
+`ROUTINE_RESULT_VISIBILITY` controls what the frontend should show after submit:
+
+- `confirmation_only`: default. Show a success/confirmation page only.
+- `show_results`: show the user their routine blueprint after submit.
+
+Webhook payloads should include:
+
+- lead fields
+- raw answers
+- scored profile
+- routine blueprint
+- flags
+- lead score
+- recommended next step
+- result visibility
+- timestamp
+- source/widget id if supplied
 
 This lets estheticians send data to services such as:
 
@@ -219,6 +241,23 @@ This lets estheticians send data to services such as:
 - custom endpoints
 
 Zapier note as of 2026-08-15: Zapier's official pricing and help docs list Webhooks by Zapier as available on Professional plans and higher, not the Free plan. ChekIt should document Zapier as an easy webhook option, but not promise that webhook-based routing works on Zapier Free.
+
+## Zapier Tutorial Plan
+
+Add a dedicated tutorial after v1 works:
+
+1. Create a Zap.
+2. Choose Webhooks by Zapier.
+3. Select Catch Hook.
+4. Copy the webhook URL.
+5. Paste it into Render as `ROUTINE_WEBHOOK_URL`.
+6. Set `ROUTINE_RESULT_VISIBILITY=confirmation_only` unless the esthetician wants users to see results.
+7. Submit a test quiz from the frontend.
+8. Confirm Zapier receives name, email, answers, routine blueprint, and lead score.
+9. Add an action such as Gmail, Google Sheets, Shopify, HubSpot, Mailchimp, or Slack.
+10. Turn the Zap on.
+
+The tutorial should include screenshots later. The first implementation only needs clear docs and a predictable payload.
 
 ## Frontend Builder Expectations
 
