@@ -16,6 +16,10 @@ services:
         value: /app/storage/chekit.sqlite
       - key: INGREDIENTS_JSON
         value: /app/seed/ingredients.json
+      - key: ROUTINE_RESULT_VISIBILITY
+        value: show_results
+      - key: ROUTINE_WEBHOOK_URL
+        sync: false
     disk:
       name: chekit-core-data
       mountPath: /app/storage

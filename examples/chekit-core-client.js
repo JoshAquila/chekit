@@ -59,6 +59,22 @@ export function createChekItCoreClient({ baseUrl = DEFAULT_BASE_URL, fetchImpl =
           onlyFaceReality
         })
       });
+    },
+
+    getRoutineBlueprintQuestions() {
+      return request('/routine-blueprint/questions');
+    },
+
+    createRoutineBlueprint({ answers, lead, source, widgetId }) {
+      return request('/api/routine-blueprint', {
+        method: 'POST',
+        body: JSON.stringify({
+          answers,
+          lead,
+          source,
+          widgetId
+        })
+      });
     }
   };
 }

@@ -3,6 +3,7 @@ import Fastify from 'fastify';
 import { config } from './config.js';
 import { checkIngredientInput, initDb, listIngredients } from './db.js';
 import { parseIngredients } from './normalize.js';
+import { createRoutineBlueprint, routineBlueprintQuestions } from './routine-blueprint.js';
 
 export function buildServer() {
   initDb();
@@ -60,7 +61,86 @@ export function buildServer() {
   fastify.post('/check', checkIngredients);
   fastify.post('/api/check', checkIngredients);
 
+  fastify.get('/routine-blueprint/questions', async () => ({
+    data: routineBlueprintQuestions
+  }));
+
+  async function submitRoutineBlueprint(request, reply) {
+    const body = request.body || {};
+
+    if (!body.answers || typeof body.answers !== 'object') {
+      return reply.code(400).send({
+        error: 'Provide answers.'
+      });
+    }
+
+    const blueprint = createRoutineBlueprint({
+      answers: body.answers,
+      lead: body.lead,
+      source: body.source,
+      widgetId: body.widgetId
+    });
+    const delivery = await deliverRoutineBlueprint({
+      blueprint,
+      resultVisibility: config.routineResultVisibility
+    });
+
+    return {
+      ...blueprint,
+      resultVisibility: config.routineResultVisibility,
+      delivery
+    };
+  }
+
+  fastify.post('/routine-blueprint', submitRoutineBlueprint);
+  fastify.post('/api/routine-blueprint', submitRoutineBlueprint);
+
   return fastify;
+}
+
+async function deliverRoutineBlueprint({ blueprint, resultVisibility }) {
+  if (!config.routineWebhookUrl) {
+    return {
+      enabled: false,
+      status: 'skipped'
+    };
+  }
+
+  const payload = {
+    lead: blueprint.lead,
+    answers: blueprint.answers,
+    skinProfile: blueprint.skinProfile,
+    routine: blueprint.routine,
+    flags: blueprint.flags,
+    leadScore: blueprint.leadScore,
+    recommendedNextStep: blueprint.recommendedNextStep,
+    resultVisibility,
+    source: blueprint.source,
+    widgetId: blueprint.widgetId,
+    submittedAt: blueprint.submittedAt
+  };
+
+  try {
+    const response = await fetch(config.routineWebhookUrl, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    return {
+      enabled: true,
+      status: response.ok ? 'sent' : 'failed',
+      statusCode: response.status
+    };
+  } catch (error) {
+    return {
+      enabled: true,
+      status: 'failed',
+      error: error.message
+    };
+  }
 }
 
 function parseBooleanQuery(value) {

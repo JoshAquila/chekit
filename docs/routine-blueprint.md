@@ -8,7 +8,8 @@ The goal is to let an esthetician or AI site builder create a simple, attractive
 
 - Keep the frontend simple enough for AI-assisted site builders to understand.
 - Keep the backend responsible for scoring, tie-breaking, lead payload shape, and optional delivery.
-- Require client email for lead generation.
+- Keep access free and avoid requiring email in exchange for results.
+- Capture optional email, phone, Instagram, or other socials when users want follow-up or client-ready next steps.
 - Avoid database, email provider, or CRM complexity in v1.
 - Use Zapier Webhooks as the assumed setup path for non-technical estheticians.
 - Keep delivery generic under the hood so estheticians can also route leads to Make, Shopify through an automation tool, a CRM, email tools, or their own webhook endpoint.
@@ -97,20 +98,20 @@ V1 should use standard questions only. Custom questions can come later after the
    - Brightening or tone support
    - A professional consultation
 
-## Required Lead Fields
+## Lead Fields
 
-Routine submissions should require:
+Routine submissions should not require lead fields in v1. The free result is the value hook.
 
-- `lead.email`
-
-Recommended but optional:
+Recommended optional fields:
 
 - `lead.name`
+- `lead.email`
 - `lead.phone`
+- `lead.instagram`
 - `lead.source`
 - `lead.consentToContact`
 
-If `lead.email` is missing or invalid, the backend should return a `400` response.
+If all lead fields are missing, the backend should still return the Routine Blueprint and mark the lead as a free user.
 
 ## Scoring Buckets
 
@@ -183,7 +184,7 @@ Frontend builders should be told to include a confirmation page after submission
 Suggested flow:
 
 1. User answers the quiz.
-2. User enters email before submission.
+2. User may enter email/social/contact details before submission, but this is optional.
 3. Frontend submits answers to the backend.
 4. Backend generates the routine blueprint.
 5. Backend sends a delivery payload if an outbound destination is configured.
@@ -196,7 +197,7 @@ Recommended confirmation copy:
 
 If user-visible results are enabled:
 
-"You can review your starter blueprint below. Your esthetician may follow up with personalized recommendations."
+"You can review your starter blueprint below. If you asked for follow-up, your esthetician may send personalized recommendations."
 
 ## Webhook Delivery
 
@@ -208,15 +209,15 @@ Recommended simple env vars:
 
 ```bash
 ROUTINE_WEBHOOK_URL=
-ROUTINE_RESULT_VISIBILITY=confirmation_only
+ROUTINE_RESULT_VISIBILITY=show_results
 ```
 
 `ROUTINE_WEBHOOK_URL` is the only integration variable most users should need. It can be a Zapier Catch Hook URL, Make webhook URL, Pipedream URL, n8n webhook URL, Activepieces webhook URL, or custom endpoint.
 
 `ROUTINE_RESULT_VISIBILITY` controls what the frontend should show after submit:
 
-- `confirmation_only`: default. Show a success/confirmation page only.
-- `show_results`: show the user their routine blueprint after submit.
+- `show_results`: default. Show the user their free routine blueprint after submit.
+- `confirmation_only`: show a success/confirmation page only.
 
 Webhook payloads should include:
 
