@@ -284,6 +284,11 @@ export function normalizeLead(lead = {}) {
   };
 }
 
+export function hasLeadContact(lead = {}) {
+  const normalizedLead = normalizeLead(lead);
+  return Boolean(normalizedLead.email || normalizedLead.phone || normalizedLead.instagram);
+}
+
 export function getRoutineBlueprintQuestionIds() {
   return [...questionIds];
 }

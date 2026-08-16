@@ -8,8 +8,8 @@ The goal is to let an esthetician or AI site builder create a simple, attractive
 
 - Keep the frontend simple enough for AI-assisted site builders to understand.
 - Keep the backend responsible for scoring, tie-breaking, lead payload shape, and optional delivery.
-- Keep access free and avoid requiring email in exchange for results.
-- Capture optional email, phone, Instagram, or other socials when users want follow-up or client-ready next steps.
+- Require a lead contact before returning results.
+- Accept email, phone, Instagram, or other social contact as the lead gate.
 - Avoid database, email provider, or CRM complexity in v1.
 - Use Zapier Webhooks as the assumed setup path for non-technical estheticians.
 - Keep delivery generic under the hood so estheticians can also route leads to Make, Shopify through an automation tool, a CRM, email tools, or their own webhook endpoint.
@@ -98,20 +98,24 @@ V1 should use standard questions only. Custom questions can come later after the
    - Brightening or tone support
    - A professional consultation
 
-## Lead Fields
+## Required Lead Fields
 
-Routine submissions should not require lead fields in v1. The free result is the value hook.
+Routine submissions should require at least one lead contact before returning results.
 
-Recommended optional fields:
+Accepted contact fields:
 
-- `lead.name`
 - `lead.email`
 - `lead.phone`
 - `lead.instagram`
+- `lead.social` as an alias for `lead.instagram`
+
+Recommended additional fields:
+
+- `lead.name`
 - `lead.source`
 - `lead.consentToContact`
 
-If all lead fields are missing, the backend should still return the Routine Blueprint and mark the lead as a free user.
+If all lead contact fields are missing, the backend should return a `400` response.
 
 ## Scoring Buckets
 
@@ -184,7 +188,7 @@ Frontend builders should be told to include a confirmation page after submission
 Suggested flow:
 
 1. User answers the quiz.
-2. User may enter email/social/contact details before submission, but this is optional.
+2. User enters email/social/contact details before submission.
 3. Frontend submits answers to the backend.
 4. Backend generates the routine blueprint.
 5. Backend sends a delivery payload if an outbound destination is configured.
@@ -197,7 +201,7 @@ Recommended confirmation copy:
 
 If user-visible results are enabled:
 
-"You can review your starter blueprint below. If you asked for follow-up, your esthetician may send personalized recommendations."
+"You can review your starter blueprint below. Your esthetician may follow up with personalized recommendations."
 
 ## Webhook Delivery
 

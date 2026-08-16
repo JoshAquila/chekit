@@ -3,7 +3,7 @@ import Fastify from 'fastify';
 import { config } from './config.js';
 import { checkIngredientInput, initDb, listIngredients } from './db.js';
 import { parseIngredients } from './normalize.js';
-import { createRoutineBlueprint, routineBlueprintQuestions } from './routine-blueprint.js';
+import { createRoutineBlueprint, hasLeadContact, routineBlueprintQuestions } from './routine-blueprint.js';
 
 export function buildServer() {
   initDb();
@@ -71,6 +71,12 @@ export function buildServer() {
     if (!body.answers || typeof body.answers !== 'object') {
       return reply.code(400).send({
         error: 'Provide answers.'
+      });
+    }
+
+    if (!hasLeadContact(body.lead)) {
+      return reply.code(400).send({
+        error: 'Provide at least one lead contact: email, phone, or instagram/social.'
       });
     }
 

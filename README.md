@@ -246,7 +246,7 @@ curl -s "http://127.0.0.1:3333/routine-blueprint/questions"
 
 Generates a free skincare routine blueprint from standard quiz answers. `/routine-blueprint` is also registered locally, but `/api/routine-blueprint` is the recommended hosted endpoint.
 
-Lead fields are optional in v1. Use them to capture value from users who want follow-up, saved results, client-ready reports, or an esthetician consultation. Do not block access to the free blueprint when lead fields are missing.
+Lead capture is required in v1. The user must provide at least one contact field before the API returns a Routine Blueprint: email, phone, Instagram, or social. Webhook delivery is still optional.
 
 Request:
 
@@ -318,6 +318,14 @@ Response:
 
 When `ROUTINE_WEBHOOK_URL` is configured, the API posts the lead, answers, profile, routine, flags, lead score, next step, visibility mode, timestamp, source, and widget id to that URL.
 
+If no lead contact is provided, the API returns `400`:
+
+```json
+{
+  "error": "Provide at least one lead contact: email, phone, or instagram/social."
+}
+```
+
 ## Important Files
 
 - `src/server.js`: Fastify app and routes.
@@ -338,7 +346,7 @@ When `ROUTINE_WEBHOOK_URL` is configured, the API posts the lead, answers, profi
 - `SQLITE_PATH`: SQLite database path. Default: `./data/chekit.sqlite`.
 - `POSTGRES_URL`: optional Postgres connection string for private maintainer import/export scripts.
 - `POSTGRES_SSL`: set to `true` for hosted Postgres requiring SSL.
-- `ROUTINE_WEBHOOK_URL`: optional webhook endpoint for Routine Blueprint lead delivery.
+- `ROUTINE_WEBHOOK_URL`: optional webhook endpoint for Routine Blueprint lead delivery. The API still requires lead contact fields when this is unset.
 - `ROUTINE_RESULT_VISIBILITY`: frontend hint for post-submit behavior. Default: `show_results`. Supported values: `show_results`, `confirmation_only`.
 
 ## License

@@ -127,6 +127,20 @@ try {
     throw new Error(JSON.stringify(routineBody, null, 2));
   }
 
+  const missingLeadResponse = await server.inject({
+    method: 'POST',
+    url: '/api/routine-blueprint',
+    payload: {
+      answers: {
+        middaySkinFeel: 'balanced'
+      }
+    }
+  });
+
+  if (missingLeadResponse.statusCode !== 400) {
+    throw new Error(missingLeadResponse.body);
+  }
+
   console.log('Smoke test passed.');
 } finally {
   await server.close();
