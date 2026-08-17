@@ -14,6 +14,7 @@ The goal is to let an esthetician or AI site builder create a simple, attractive
 - Use Zapier Webhooks as the assumed setup path for non-technical estheticians.
 - Keep delivery generic under the hood so estheticians can also route leads to Make, Shopify through an automation tool, a CRM, email tools, or their own webhook endpoint.
 - Let the frontend decide whether the user sees results immediately, after confirmation, by email only, or both.
+- Do not store Routine Blueprint submissions in SQLite for v1. Keep SQLite focused on ingredient/reference data.
 
 ## Working Name
 
@@ -205,7 +206,7 @@ If user-visible results are enabled:
 
 ## Webhook Delivery
 
-Webhook delivery should be the primary v1 lead routing path.
+Webhook delivery should be the primary v1 lead routing and storage path.
 
 Zapier should be the assumed tutorial path because it is familiar, approachable, and good enough for a warm lead tool. ChekIt should still implement a generic webhook POST, not a Zapier-specific integration.
 
@@ -240,10 +241,25 @@ This lets estheticians send data to services such as:
 
 - Zapier
 - Make
+- Google Sheets
+- Airtable
 - Shopify
 - CRM systems
 - email marketing tools
 - custom endpoints
+
+## V1 Storage Decision
+
+Do not add Routine Blueprint submission storage to SQLite in v1.
+
+Reasons:
+
+- Estheticians are more likely to understand and use a spreadsheet, CRM, or email workflow than a local admin database.
+- Zapier to Google Sheets gives immediate lead access without building authentication, admin views, CSV export, retention tooling, or privacy workflows.
+- The existing SQLite setup can stay focused on public ingredient/reference data.
+- The backend remains easy to deploy and explain.
+
+If `ROUTINE_WEBHOOK_URL` is unset, ChekIt Core should still return the Routine Blueprint and report delivery as skipped, but it should not save the submission locally. If local lead history becomes important later, add it as a separate feature with clear admin access, export, retention, and privacy expectations.
 
 Zapier note as of 2026-08-15: Zapier's official pricing and help docs list Webhooks by Zapier as available on Professional plans and higher, not the Free plan. ChekIt should document Zapier as an easy webhook option, but not promise that webhook-based routing works on Zapier Free.
 

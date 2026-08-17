@@ -326,6 +326,18 @@ If no lead contact is provided, the API returns `400`:
 }
 ```
 
+#### Routine Blueprint Lead Storage
+
+Routine Blueprint v1 does not store lead submissions in SQLite. SQLite stays focused on public ingredient/reference data.
+
+Use `ROUTINE_WEBHOOK_URL` to save leads somewhere useful for the esthetician. The recommended v1 path is:
+
+1. Create a Zapier Catch Hook.
+2. Paste the hook URL into Render as `ROUTINE_WEBHOOK_URL`.
+3. Add a Zapier action that writes each submission to Google Sheets.
+
+The webhook payload includes the lead contact fields, raw answers, scored skin profile, generated routine, flags, lead score, source, widget id, and submission timestamp. If `ROUTINE_WEBHOOK_URL` is unset, the API still returns the Routine Blueprint and marks delivery as skipped, but the lead is not saved by ChekIt Core.
+
 ## Important Files
 
 - `src/server.js`: Fastify app and routes.
@@ -346,7 +358,7 @@ If no lead contact is provided, the API returns `400`:
 - `SQLITE_PATH`: SQLite database path. Default: `./data/chekit.sqlite`.
 - `POSTGRES_URL`: optional Postgres connection string for private maintainer import/export scripts.
 - `POSTGRES_SSL`: set to `true` for hosted Postgres requiring SSL.
-- `ROUTINE_WEBHOOK_URL`: optional webhook endpoint for Routine Blueprint lead delivery. The API still requires lead contact fields when this is unset.
+- `ROUTINE_WEBHOOK_URL`: optional webhook endpoint for Routine Blueprint lead delivery and v1 lead storage through tools like Zapier and Google Sheets. The API still requires lead contact fields when this is unset.
 - `ROUTINE_RESULT_VISIBILITY`: frontend hint for post-submit behavior. Default: `show_results`. Supported values: `show_results`, `confirmation_only`.
 
 ## License
