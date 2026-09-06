@@ -348,7 +348,7 @@ The webhook payload includes the lead contact fields, raw answers, scored skin p
 - `scripts/import-postgres-to-sqlite.js`: pulls private Postgres ingredients into SQLite when credentials are available.
 - `scripts/import-backend-seed.js`: imports checked-in backend seed data.
 - `examples/chekit-core-client.js`: copy-paste frontend API client.
-- `docs/routine-blueprint.md`: Routine Blueprint product, scoring, and webhook notes.
+- `docs/routine-blueprint.md`: Routine Blueprint product, scoring, webhook notes, and LLM frontend build instructions.
 - `data/chekit.sqlite`: generated local SQLite DB, ignored by git.
 
 ## Environment Variables

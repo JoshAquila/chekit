@@ -299,6 +299,94 @@ Frontend examples should support:
 
 The default frontend example should look clean and calm for estheticians: simple typography, generous spacing, soft but not childish styling, and no busy dashboard UI.
 
+## LLM Frontend Build Instructions
+
+Use this section as the implementation brief when asking an LLM to wire Routine Blueprint into a beta frontend.
+
+Goal: build a lightweight JavaScript and CSS Routine Blueprint widget that can run inside a Vite/Vue app, a static page, or an embedded marketing site. The widget should fetch the standard questions from ChekIt Core, collect lead contact details, submit answers, and render either the generated blueprint or a confirmation-only state.
+
+API contract:
+
+- `GET /routine-blueprint/questions`: fetches the quiz question array.
+- `POST /api/routine-blueprint`: submits `{ answers, lead, source, widgetId }`.
+- Configure the frontend API base URL with `VITE_CHEKIT_CORE_URL` when using Vite.
+- Fall back to `http://localhost:3333` for local testing.
+- Reuse `examples/chekit-core-client.js` instead of duplicating fetch logic when possible.
+
+Required JavaScript behavior:
+
+- Load questions on initialization and show a loading state.
+- Render one question at a time by default.
+- Support `type: "single"` as radio/button choices.
+- Support `type: "multi"` as checkbox choices.
+- Respect `maxSelections` when present.
+- Store answers by question `id`, not by prompt or label.
+- Require at least one contact field before submit: email, phone, Instagram, or social.
+- Include optional `name` and `consentToContact` fields when the UI collects them.
+- Submit `source` and `widgetId` so webhook leads identify the page/widget.
+- Disable the submit button while the request is in flight.
+- Show API validation errors in plain language.
+- If `resultVisibility` is `confirmation_only`, show a confirmation screen without rendering the routine.
+- Otherwise render `summary`, `skinProfile`, `routine`, `flags`, `recommendedNextStep`, and `disclaimer`.
+
+Required CSS behavior:
+
+- Scope styles under a stable wrapper such as `.chekit-routine-widget`.
+- Use CSS custom properties for common theme values:
+  - `--chekit-font-family`
+  - `--chekit-bg`
+  - `--chekit-surface`
+  - `--chekit-text`
+  - `--chekit-muted`
+  - `--chekit-border`
+  - `--chekit-accent`
+  - `--chekit-accent-text`
+  - `--chekit-radius`
+- Keep the layout calm, clean, and esthetician-friendly.
+- Make the widget responsive down to mobile widths.
+- Use visible focus states for keyboard users.
+- Keep buttons and option controls large enough to tap.
+- Do not rely on framework-specific global CSS.
+- Avoid medical or diagnostic language in UI copy.
+
+Suggested file shape for a vanilla integration:
+
+```text
+src/chekit-routine/
+  chekit-routine-widget.js
+  chekit-routine-widget.css
+```
+
+Suggested Vite usage:
+
+```js
+import { createRoutineWidget } from './chekit-routine/chekit-routine-widget.js';
+import './chekit-routine/chekit-routine-widget.css';
+
+createRoutineWidget({
+  target: document.querySelector('#chekit-routine-widget'),
+  baseUrl: import.meta.env.VITE_CHEKIT_CORE_URL || 'http://localhost:3333',
+  source: 'beta-frontend',
+  widgetId: 'routine-blueprint-beta'
+});
+```
+
+Suggested HTML mount point:
+
+```html
+<section id="chekit-routine-widget"></section>
+```
+
+Local test checklist:
+
+1. Start ChekIt Core with `npm run dev`.
+2. Set `VITE_CHEKIT_CORE_URL=http://localhost:3333` in the frontend.
+3. Open the beta frontend.
+4. Complete the quiz with at least one lead contact field.
+5. Confirm the frontend handles a successful Routine Blueprint response.
+6. Confirm an empty-contact submission shows the API validation error.
+7. Confirm mobile layout, keyboard focus, loading state, and disabled submit state.
+
 ## Future AI Enhancement
 
 AI analysis should not be required in v1.
