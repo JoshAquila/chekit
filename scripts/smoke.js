@@ -74,6 +74,73 @@ try {
     throw new Error(JSON.stringify(faceRealityBody, null, 2));
   }
 
+  const questionsResponse = await server.inject({
+    method: 'GET',
+    url: '/routine-blueprint/questions'
+  });
+
+  if (questionsResponse.statusCode !== 200) {
+    throw new Error(questionsResponse.body);
+  }
+
+  const questionsBody = JSON.parse(questionsResponse.body);
+  if (questionsBody.data.length !== 10 || questionsBody.data[0].id !== 'middaySkinFeel') {
+    throw new Error(JSON.stringify(questionsBody, null, 2));
+  }
+
+  const routineResponse = await server.inject({
+    method: 'POST',
+    url: '/api/routine-blueprint',
+    payload: {
+      answers: {
+        middaySkinFeel: 'combo',
+        afterCleansingFeel: 'comfortable',
+        topConcerns: ['breakouts', 'clogged_pores', 'dryness'],
+        breakoutFrequency: 'weekly',
+        productReactivity: 'sometimes',
+        drynessLevel: 'mild',
+        currentProducts: ['cleanser', 'moisturizer'],
+        activeFrequency: 'one_two_weekly',
+        sunscreenFrequency: 'outside_only',
+        helpGoal: 'acne'
+      },
+      lead: {
+        instagram: '@chekitclient',
+        consentToContact: true
+      },
+      source: 'smoke'
+    }
+  });
+
+  if (routineResponse.statusCode !== 200) {
+    throw new Error(routineResponse.body);
+  }
+
+  const routineBody = JSON.parse(routineResponse.body);
+  if (
+    routineBody.resultId !== 'routine_blueprint_v1'
+    || routineBody.skinProfile.type !== 'combination'
+    || !routineBody.skinProfile.concerns.includes('acne')
+    || routineBody.delivery.status !== 'skipped'
+    || routineBody.leadScore !== 'qualified'
+  ) {
+    throw new Error(JSON.stringify(routineBody, null, 2));
+  }
+
+  const missingLeadResponse = await server.inject({
+    method: 'POST',
+    url: '/api/routine-blueprint',
+    payload: {
+      answers: {
+        middaySkinFeel: 'balanced'
+      }
+    }
+  });
+
+  if (missingLeadResponse.statusCode !== 400) {
+    throw new Error(missingLeadResponse.body);
+  }
+
   console.log('Smoke test passed.');
 } finally {
   await server.close();

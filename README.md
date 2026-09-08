@@ -32,6 +32,8 @@ Expected result: `Cocos Nucifera` matches `Coconut Oil`, and `Isopropyl Myristat
 - Stores ingredient items in SQLite.
 - Builds the local SQLite database from the checked-in `data/ingredients.json` seed.
 - Checks a submitted ingredient list against canonical ingredient names and known synonyms.
+- Generates a free Routine Blueprint from standard skincare quiz answers.
+- Optionally sends Routine Blueprint lead payloads to a webhook.
 - Returns matched ingredients with synonym details.
 - Runs locally with Node or Docker Compose.
 
@@ -232,6 +234,110 @@ Response:
 }
 ```
 
+### `GET /routine-blueprint/questions`
+
+Returns the standard Routine Blueprint question set for frontend builders.
+
+```bash
+curl -s "http://127.0.0.1:3333/routine-blueprint/questions"
+```
+
+### `POST /api/routine-blueprint`
+
+Generates a free skincare routine blueprint from standard quiz answers. `/routine-blueprint` is also registered locally, but `/api/routine-blueprint` is the recommended hosted endpoint.
+
+Lead capture is required in v1. The user must provide at least one contact field before the API returns a Routine Blueprint: email, phone, Instagram, or social. Webhook delivery is still optional.
+
+Request:
+
+```json
+{
+  "answers": {
+    "middaySkinFeel": "combo",
+    "afterCleansingFeel": "comfortable",
+    "topConcerns": ["breakouts", "clogged_pores"],
+    "breakoutFrequency": "weekly",
+    "productReactivity": "sometimes",
+    "drynessLevel": "mild",
+    "currentProducts": ["cleanser", "moisturizer"],
+    "activeFrequency": "one_two_weekly",
+    "sunscreenFrequency": "outside_only",
+    "helpGoal": "acne"
+  },
+  "lead": {
+    "name": "Jane Client",
+    "email": "jane@example.com",
+    "instagram": "@janeclient",
+    "consentToContact": true
+  },
+  "source": "homepage",
+  "widgetId": "main-routine-quiz"
+}
+```
+
+Response:
+
+```json
+{
+  "resultId": "routine_blueprint_v1",
+  "summary": "Your answers suggest combination-leaning skin with acne, clogged pores, and dryness, a watch barrier signal, and inconsistent sun protection.",
+  "skinProfile": {
+    "type": "combination",
+    "concerns": ["acne", "clogged_pores", "dryness"],
+    "barrier": "watch",
+    "sunProtection": "inconsistent"
+  },
+  "routine": {
+    "morning": [
+      "Gentle cleanser",
+      "Lightweight moisturizer",
+      "Broad-spectrum sunscreen",
+      "Make sunscreen the non-negotiable last step"
+    ],
+    "evening": [
+      "Gentle cleanser",
+      "Barrier-supporting moisturizer"
+    ],
+    "weekly": [
+      "Introduce one acne-safe active slowly, one to two nights per week"
+    ]
+  },
+  "flags": [
+    "Prioritize daily sunscreen before brightening products"
+  ],
+  "leadScore": "qualified",
+  "recommendedNextStep": "Use a simple acne-safe routine and consider a professional review if breakouts are frequent.",
+  "resultVisibility": "show_results",
+  "delivery": {
+    "enabled": false,
+    "status": "skipped"
+  },
+  "disclaimer": "Educational only. Not medical advice."
+}
+```
+
+When `ROUTINE_WEBHOOK_URL` is configured, the API posts the lead, answers, profile, routine, flags, lead score, next step, visibility mode, timestamp, source, and widget id to that URL.
+
+If no lead contact is provided, the API returns `400`:
+
+```json
+{
+  "error": "Provide at least one lead contact: email, phone, or instagram/social."
+}
+```
+
+#### Routine Blueprint Lead Storage
+
+Routine Blueprint v1 does not store lead submissions in SQLite. SQLite stays focused on public ingredient/reference data.
+
+Use `ROUTINE_WEBHOOK_URL` to save leads somewhere useful for the esthetician. The recommended v1 path is:
+
+1. Create a Zapier Catch Hook.
+2. Paste the hook URL into Render as `ROUTINE_WEBHOOK_URL`.
+3. Add a Zapier action that writes each submission to Google Sheets.
+
+The webhook payload includes the lead contact fields, raw answers, scored skin profile, generated routine, flags, lead score, source, widget id, and submission timestamp. If `ROUTINE_WEBHOOK_URL` is unset, the API still returns the Routine Blueprint and marks delivery as skipped, but the lead is not saved by ChekIt Core.
+
 ## Important Files
 
 - `src/server.js`: Fastify app and routes.
@@ -242,6 +348,7 @@ Response:
 - `scripts/import-postgres-to-sqlite.js`: pulls private Postgres ingredients into SQLite when credentials are available.
 - `scripts/import-backend-seed.js`: imports checked-in backend seed data.
 - `examples/chekit-core-client.js`: copy-paste frontend API client.
+- `docs/routine-blueprint.md`: Routine Blueprint product, scoring, webhook notes, and LLM frontend build instructions.
 - `data/chekit.sqlite`: generated local SQLite DB, ignored by git.
 
 ## Environment Variables
@@ -251,6 +358,8 @@ Response:
 - `SQLITE_PATH`: SQLite database path. Default: `./data/chekit.sqlite`.
 - `POSTGRES_URL`: optional Postgres connection string for private maintainer import/export scripts.
 - `POSTGRES_SSL`: set to `true` for hosted Postgres requiring SSL.
+- `ROUTINE_WEBHOOK_URL`: optional webhook endpoint for Routine Blueprint lead delivery and v1 lead storage through tools like Zapier and Google Sheets. The API still requires lead contact fields when this is unset.
+- `ROUTINE_RESULT_VISIBILITY`: frontend hint for post-submit behavior. Default: `show_results`. Supported values: `show_results`, `confirmation_only`.
 
 ## License
 
