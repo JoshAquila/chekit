@@ -6,7 +6,7 @@
   "description": "Small ChekIt ingredient matching API backed by SQLite.",
   "license": "AGPL-3.0-only",
   "engines": {
-    "node": ">=22"
+    "node": ">=24.22.1"
   },
   "scripts": {
     "dev": "node --watch src/server.js",
@@ -22,7 +22,7 @@
     "@fastify/cors": "^11.1.0",
     "better-sqlite3": "^12.2.0",
     "dotenv": "^17.2.1",
-    "fastify": "^5.4.0",
+    "fastify": "^5.12.7",
     "pg": "^8.16.3"
   }
 }
